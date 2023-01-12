@@ -1,0 +1,84 @@
+.card{
+    border-style: none;
+}
+.donnie_avatar{
+    width: 250px;
+}
+.gulliver_avatar{
+    width: 150px;
+}
+.alex_avatar{
+    width: 150px;
+}
+.cris_avatar{
+    width: 150px;
+}
+#donnie {
+    justify-content: center;
+    align-items: center;
+}
+#gulliver {
+    justify-content: center;
+    align-items: center;
+}
+#alex {
+    justify-content: center;
+    align-items: center;
+}
+#cris {
+    justify-content: center;
+    align-items: center;
+}
+.title-color-cyan{
+    color: var(--cyan);
+}
+.large-text{
+    font-size: 30px;
+}
+@media (max-width:1024px){
+    .donnie_avatar{
+        width: 150px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    h6{
+        font-size: 13px;
+    }
+}
+@media (max-width:551px){
+.col-sm-6{
+    width: fit-content;
+}
+}
+@media (max-width:440px){
+#company-title {
+    font-size: 4em;
+}
+}
+@media (max-width:371px){
+#company-title {
+    font-size: 3em;
+}
+#header-address{
+    font-size: 1.2em;
+}
+#header-tel{
+    font-size: 3em;
+}
+.col-sm-6{
+    width: fit-content;
+}
+.donnie_avatar{
+    width: 80px;
+}
+.gulliver_avatar{
+    width: 80px;
+}
+.alex_avatar{
+    width: 80px;
+}
+.cris_avatar{
+    width: 80px;
+}
+}

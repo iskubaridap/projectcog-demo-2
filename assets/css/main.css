@@ -1,0 +1,8 @@
+@import '../bootstrap/css/bootstrap.min.css';
+@import '../bootstrap/css/bootstrap-icons.css';
+@import 'general.css';
+@import 'hover-min.css';
+@import 'styles.css';
+@import 'home.css';
+@import 'about.css';
+@import 'custom.css';

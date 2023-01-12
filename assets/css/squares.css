@@ -1,0 +1,2758 @@
+/*!
+ *  Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+
+@font-face {
+    font-family: FontAwesome;
+    src: url(https://webcraftplugins.com/fonts/fontawesome-webfont.eot?v=4.5.0);
+    src: url(https://webcraftplugins.com/fonts/fontawesome-webfont.eot?#iefix&v=4.5.0) format('embedded-opentype'), url(https://webcraftplugins.com/fonts/fontawesome-webfont.woff2?v=4.5.0) format('woff2'), url(https://webcraftplugins.com/fonts/fontawesome-webfont.woff?v=4.5.0) format('woff'), url(https://webcraftplugins.com/fonts/fontawesome-webfont.ttf?v=4.5.0) format('truetype'), url(https://webcraftplugins.com/fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+#hotspotter .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+#hotspotter .fa-lg {
+    font-size: 1.33333333em;
+    line-height: .75em;
+    vertical-align: -15%
+}
+
+#hotspotter .fa-2x {
+    font-size: 2em
+}
+
+#hotspotter .fa-3x {
+    font-size: 3em
+}
+
+#hotspotter .fa-4x {
+    font-size: 4em
+}
+
+#hotspotter .fa-5x {
+    font-size: 5em
+}
+
+#hotspotter .fa-fw {
+    width: 1.28571429em;
+    text-align: center
+}
+
+#hotspotter .fa-ul {
+    padding-left: 0;
+    margin-left: 2.14285714em;
+    list-style-type: none
+}
+
+#hotspotter .fa-ul>li {
+    position: relative
+}
+
+#hotspotter .fa-li {
+    position: absolute;
+    left: -2.14285714em;
+    width: 2.14285714em;
+    top: .14285714em;
+    text-align: center
+}
+
+#hotspotter .fa-li.fa-lg {
+    left: -1.85714286em
+}
+
+#hotspotter .fa-border {
+    padding: .2em .25em .15em;
+    border: .08em solid #eee;
+    border-radius: .1em
+}
+
+#hotspotter .fa-pull-left {
+    float: left
+}
+
+#hotspotter .fa-pull-right {
+    float: right
+}
+
+#hotspotter .fa.fa-pull-left {
+    margin-right: .3em
+}
+
+#hotspotter .fa.fa-pull-right {
+    margin-left: .3em
+}
+
+#hotspotter .pull-right {
+    float: right
+}
+
+#hotspotter .pull-left {
+    float: left
+}
+
+#hotspotter .fa.pull-left {
+    margin-right: .3em
+}
+
+#hotspotter .fa.pull-right {
+    margin-left: .3em
+}
+
+#hotspotter .fa-spin {
+    -webkit-animation: fa-spin 2s infinite linear;
+    animation: fa-spin 2s infinite linear
+}
+
+#hotspotter .fa-pulse {
+    -webkit-animation: fa-spin 1s infinite steps(8);
+    animation: fa-spin 1s infinite steps(8)
+}
+
+@-webkit-keyframes fa-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+
+@keyframes fa-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg)
+    }
+}
+
+#hotspotter .fa-rotate-90 {
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=1);
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg)
+}
+
+#hotspotter .fa-rotate-180 {
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=2);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+#hotspotter .fa-rotate-270 {
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3);
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg)
+}
+
+#hotspotter .fa-flip-horizontal {
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+    -webkit-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1)
+}
+
+#hotspotter .fa-flip-vertical {
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+    -webkit-transform: scale(1, -1);
+    -ms-transform: scale(1, -1);
+    transform: scale(1, -1)
+}
+
+:root #hotspotter .fa-flip-horizontal,
+:root #hotspotter .fa-flip-vertical,
+:root #hotspotter .fa-rotate-180,
+:root #hotspotter .fa-rotate-270,
+:root #hotspotter .fa-rotate-90 {
+    filter: none
+}
+
+#hotspotter .fa-stack {
+    position: relative;
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+    vertical-align: middle
+}
+
+#hotspotter .fa-stack-1x,
+#hotspotter .fa-stack-2x {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center
+}
+
+#hotspotter .fa-stack-1x {
+    line-height: inherit
+}
+
+#hotspotter .fa-stack-2x {
+    font-size: 2em
+}
+
+#hotspotter .fa-inverse {
+    color: #fff
+}
+
+#hotspotter .fa-glass:before {
+    content: "\f000"
+}
+
+#hotspotter .fa-music:before {
+    content: "\f001"
+}
+
+#hotspotter .fa-search:before {
+    content: "\f002"
+}
+
+#hotspotter .fa-envelope-o:before {
+    content: "\f003"
+}
+
+#hotspotter .fa-heart:before {
+    content: "\f004"
+}
+
+#hotspotter .fa-star:before {
+    content: "\f005"
+}
+
+#hotspotter .fa-star-o:before {
+    content: "\f006"
+}
+
+#hotspotter .fa-user:before {
+    content: "\f007"
+}
+
+#hotspotter .fa-film:before {
+    content: "\f008"
+}
+
+#hotspotter .fa-th-large:before {
+    content: "\f009"
+}
+
+#hotspotter .fa-th:before {
+    content: "\f00a"
+}
+
+#hotspotter .fa-th-list:before {
+    content: "\f00b"
+}
+
+#hotspotter .fa-check:before {
+    content: "\f00c"
+}
+
+#hotspotter .fa-close:before,
+#hotspotter .fa-remove:before,
+#hotspotter .fa-times:before {
+    content: "\f00d"
+}
+
+#hotspotter .fa-search-plus:before {
+    content: "\f00e"
+}
+
+#hotspotter .fa-search-minus:before {
+    content: "\f010"
+}
+
+#hotspotter .fa-power-off:before {
+    content: "\f011"
+}
+
+#hotspotter .fa-signal:before {
+    content: "\f012"
+}
+
+#hotspotter .fa-cog:before,
+#hotspotter .fa-gear:before {
+    content: "\f013"
+}
+
+#hotspotter .fa-trash-o:before {
+    content: "\f014"
+}
+
+#hotspotter .fa-home:before {
+    content: "\f015"
+}
+
+#hotspotter .fa-file-o:before {
+    content: "\f016"
+}
+
+#hotspotter .fa-clock-o:before {
+    content: "\f017"
+}
+
+#hotspotter .fa-road:before {
+    content: "\f018"
+}
+
+#hotspotter .fa-download:before {
+    content: "\f019"
+}
+
+#hotspotter .fa-arrow-circle-o-down:before {
+    content: "\f01a"
+}
+
+#hotspotter .fa-arrow-circle-o-up:before {
+    content: "\f01b"
+}
+
+#hotspotter .fa-inbox:before {
+    content: "\f01c"
+}
+
+#hotspotter .fa-play-circle-o:before {
+    content: "\f01d"
+}
+
+#hotspotter .fa-repeat:before,
+#hotspotter .fa-rotate-right:before {
+    content: "\f01e"
+}
+
+#hotspotter .fa-refresh:before {
+    content: "\f021"
+}
+
+#hotspotter .fa-list-alt:before {
+    content: "\f022"
+}
+
+#hotspotter .fa-lock:before {
+    content: "\f023"
+}
+
+#hotspotter .fa-flag:before {
+    content: "\f024"
+}
+
+#hotspotter .fa-headphones:before {
+    content: "\f025"
+}
+
+#hotspotter .fa-volume-off:before {
+    content: "\f026"
+}
+
+#hotspotter .fa-volume-down:before {
+    content: "\f027"
+}
+
+#hotspotter .fa-volume-up:before {
+    content: "\f028"
+}
+
+#hotspotter .fa-qrcode:before {
+    content: "\f029"
+}
+
+#hotspotter .fa-barcode:before {
+    content: "\f02a"
+}
+
+#hotspotter .fa-tag:before {
+    content: "\f02b"
+}
+
+#hotspotter .fa-tags:before {
+    content: "\f02c"
+}
+
+#hotspotter .fa-book:before {
+    content: "\f02d"
+}
+
+#hotspotter .fa-bookmark:before {
+    content: "\f02e"
+}
+
+#hotspotter .fa-print:before {
+    content: "\f02f"
+}
+
+#hotspotter .fa-camera:before {
+    content: "\f030"
+}
+
+#hotspotter .fa-font:before {
+    content: "\f031"
+}
+
+#hotspotter .fa-bold:before {
+    content: "\f032"
+}
+
+#hotspotter .fa-italic:before {
+    content: "\f033"
+}
+
+#hotspotter .fa-text-height:before {
+    content: "\f034"
+}
+
+#hotspotter .fa-text-width:before {
+    content: "\f035"
+}
+
+#hotspotter .fa-align-left:before {
+    content: "\f036"
+}
+
+#hotspotter .fa-align-center:before {
+    content: "\f037"
+}
+
+#hotspotter .fa-align-right:before {
+    content: "\f038"
+}
+
+#hotspotter .fa-align-justify:before {
+    content: "\f039"
+}
+
+#hotspotter .fa-list:before {
+    content: "\f03a"
+}
+
+#hotspotter .fa-dedent:before,
+#hotspotter .fa-outdent:before {
+    content: "\f03b"
+}
+
+#hotspotter .fa-indent:before {
+    content: "\f03c"
+}
+
+#hotspotter .fa-video-camera:before {
+    content: "\f03d"
+}
+
+#hotspotter .fa-image:before,
+#hotspotter .fa-photo:before,
+#hotspotter .fa-picture-o:before {
+    content: "\f03e"
+}
+
+#hotspotter .fa-pencil:before {
+    content: "\f040"
+}
+
+#hotspotter .fa-map-marker:before {
+    content: "\f041"
+}
+
+#hotspotter .fa-adjust:before {
+    content: "\f042"
+}
+
+#hotspotter .fa-tint:before {
+    content: "\f043"
+}
+
+#hotspotter .fa-edit:before,
+#hotspotter .fa-pencil-square-o:before {
+    content: "\f044"
+}
+
+#hotspotter .fa-share-square-o:before {
+    content: "\f045"
+}
+
+#hotspotter .fa-check-square-o:before {
+    content: "\f046"
+}
+
+#hotspotter .fa-arrows:before {
+    content: "\f047"
+}
+
+#hotspotter .fa-step-backward:before {
+    content: "\f048"
+}
+
+#hotspotter .fa-fast-backward:before {
+    content: "\f049"
+}
+
+#hotspotter .fa-backward:before {
+    content: "\f04a"
+}
+
+#hotspotter .fa-play:before {
+    content: "\f04b"
+}
+
+#hotspotter .fa-pause:before {
+    content: "\f04c"
+}
+
+#hotspotter .fa-stop:before {
+    content: "\f04d"
+}
+
+#hotspotter .fa-forward:before {
+    content: "\f04e"
+}
+
+#hotspotter .fa-fast-forward:before {
+    content: "\f050"
+}
+
+#hotspotter .fa-step-forward:before {
+    content: "\f051"
+}
+
+#hotspotter .fa-eject:before {
+    content: "\f052"
+}
+
+#hotspotter .fa-chevron-left:before {
+    content: "\f053"
+}
+
+#hotspotter .fa-chevron-right:before {
+    content: "\f054"
+}
+
+#hotspotter .fa-plus-circle:before {
+    content: "\f055"
+}
+
+#hotspotter .fa-minus-circle:before {
+    content: "\f056"
+}
+
+#hotspotter .fa-times-circle:before {
+    content: "\f057"
+}
+
+#hotspotter .fa-check-circle:before {
+    content: "\f058"
+}
+
+#hotspotter .fa-question-circle:before {
+    content: "\f059"
+}
+
+#hotspotter .fa-info-circle:before {
+    content: "\f05a"
+}
+
+#hotspotter .fa-crosshairs:before {
+    content: "\f05b"
+}
+
+#hotspotter .fa-times-circle-o:before {
+    content: "\f05c"
+}
+
+#hotspotter .fa-check-circle-o:before {
+    content: "\f05d"
+}
+
+#hotspotter .fa-ban:before {
+    content: "\f05e"
+}
+
+#hotspotter .fa-arrow-left:before {
+    content: "\f060"
+}
+
+#hotspotter .fa-arrow-right:before {
+    content: "\f061"
+}
+
+#hotspotter .fa-arrow-up:before {
+    content: "\f062"
+}
+
+#hotspotter .fa-arrow-down:before {
+    content: "\f063"
+}
+
+#hotspotter .fa-mail-forward:before,
+#hotspotter .fa-share:before {
+    content: "\f064"
+}
+
+#hotspotter .fa-expand:before {
+    content: "\f065"
+}
+
+#hotspotter .fa-compress:before {
+    content: "\f066"
+}
+
+#hotspotter .fa-plus:before {
+    content: "\f067"
+}
+
+#hotspotter .fa-minus:before {
+    content: "\f068"
+}
+
+#hotspotter .fa-asterisk:before {
+    content: "\f069"
+}
+
+#hotspotter .fa-exclamation-circle:before {
+    content: "\f06a"
+}
+
+#hotspotter .fa-gift:before {
+    content: "\f06b"
+}
+
+#hotspotter .fa-leaf:before {
+    content: "\f06c"
+}
+
+#hotspotter .fa-fire:before {
+    content: "\f06d"
+}
+
+#hotspotter .fa-eye:before {
+    content: "\f06e"
+}
+
+#hotspotter .fa-eye-slash:before {
+    content: "\f070"
+}
+
+#hotspotter .fa-exclamation-triangle:before,
+#hotspotter .fa-warning:before {
+    content: "\f071"
+}
+
+#hotspotter .fa-plane:before {
+    content: "\f072"
+}
+
+#hotspotter .fa-calendar:before {
+    content: "\f073"
+}
+
+#hotspotter .fa-random:before {
+    content: "\f074"
+}
+
+#hotspotter .fa-comment:before {
+    content: "\f075"
+}
+
+#hotspotter .fa-magnet:before {
+    content: "\f076"
+}
+
+#hotspotter .fa-chevron-up:before {
+    content: "\f077"
+}
+
+#hotspotter .fa-chevron-down:before {
+    content: "\f078"
+}
+
+#hotspotter .fa-retweet:before {
+    content: "\f079"
+}
+
+#hotspotter .fa-shopping-cart:before {
+    content: "\f07a"
+}
+
+#hotspotter .fa-folder:before {
+    content: "\f07b"
+}
+
+#hotspotter .fa-folder-open:before {
+    content: "\f07c"
+}
+
+#hotspotter .fa-arrows-v:before {
+    content: "\f07d"
+}
+
+#hotspotter .fa-arrows-h:before {
+    content: "\f07e"
+}
+
+#hotspotter .fa-bar-chart-o:before,
+#hotspotter .fa-bar-chart:before {
+    content: "\f080"
+}
+
+#hotspotter .fa-twitter-square:before {
+    content: "\f081"
+}
+
+#hotspotter .fa-facebook-square:before {
+    content: "\f082"
+}
+
+#hotspotter .fa-camera-retro:before {
+    content: "\f083"
+}
+
+#hotspotter .fa-key:before {
+    content: "\f084"
+}
+
+#hotspotter .fa-cogs:before,
+#hotspotter .fa-gears:before {
+    content: "\f085"
+}
+
+#hotspotter .fa-comments:before {
+    content: "\f086"
+}
+
+#hotspotter .fa-thumbs-o-up:before {
+    content: "\f087"
+}
+
+#hotspotter .fa-thumbs-o-down:before {
+    content: "\f088"
+}
+
+#hotspotter .fa-star-half:before {
+    content: "\f089"
+}
+
+#hotspotter .fa-heart-o:before {
+    content: "\f08a"
+}
+
+#hotspotter .fa-sign-out:before {
+    content: "\f08b"
+}
+
+#hotspotter .fa-linkedin-square:before {
+    content: "\f08c"
+}
+
+#hotspotter .fa-thumb-tack:before {
+    content: "\f08d"
+}
+
+#hotspotter .fa-external-link:before {
+    content: "\f08e"
+}
+
+#hotspotter .fa-sign-in:before {
+    content: "\f090"
+}
+
+#hotspotter .fa-trophy:before {
+    content: "\f091"
+}
+
+#hotspotter .fa-github-square:before {
+    content: "\f092"
+}
+
+#hotspotter .fa-upload:before {
+    content: "\f093"
+}
+
+#hotspotter .fa-lemon-o:before {
+    content: "\f094"
+}
+
+#hotspotter .fa-phone:before {
+    content: "\f095"
+}
+
+#hotspotter .fa-square-o:before {
+    content: "\f096"
+}
+
+#hotspotter .fa-bookmark-o:before {
+    content: "\f097"
+}
+
+#hotspotter .fa-phone-square:before {
+    content: "\f098"
+}
+
+#hotspotter .fa-twitter:before {
+    content: "\f099"
+}
+
+#hotspotter .fa-facebook-f:before,
+#hotspotter .fa-facebook:before {
+    content: "\f09a"
+}
+
+#hotspotter .fa-github:before {
+    content: "\f09b"
+}
+
+#hotspotter .fa-unlock:before {
+    content: "\f09c"
+}
+
+#hotspotter .fa-credit-card:before {
+    content: "\f09d"
+}
+
+#hotspotter .fa-feed:before,
+#hotspotter .fa-rss:before {
+    content: "\f09e"
+}
+
+#hotspotter .fa-hdd-o:before {
+    content: "\f0a0"
+}
+
+#hotspotter .fa-bullhorn:before {
+    content: "\f0a1"
+}
+
+#hotspotter .fa-bell:before {
+    content: "\f0f3"
+}
+
+#hotspotter .fa-certificate:before {
+    content: "\f0a3"
+}
+
+#hotspotter .fa-hand-o-right:before {
+    content: "\f0a4"
+}
+
+#hotspotter .fa-hand-o-left:before {
+    content: "\f0a5"
+}
+
+#hotspotter .fa-hand-o-up:before {
+    content: "\f0a6"
+}
+
+#hotspotter .fa-hand-o-down:before {
+    content: "\f0a7"
+}
+
+#hotspotter .fa-arrow-circle-left:before {
+    content: "\f0a8"
+}
+
+#hotspotter .fa-arrow-circle-right:before {
+    content: "\f0a9"
+}
+
+#hotspotter .fa-arrow-circle-up:before {
+    content: "\f0aa"
+}
+
+#hotspotter .fa-arrow-circle-down:before {
+    content: "\f0ab"
+}
+
+#hotspotter .fa-globe:before {
+    content: "\f0ac"
+}
+
+#hotspotter .fa-wrench:before {
+    content: "\f0ad"
+}
+
+#hotspotter .fa-tasks:before {
+    content: "\f0ae"
+}
+
+#hotspotter .fa-filter:before {
+    content: "\f0b0"
+}
+
+#hotspotter .fa-briefcase:before {
+    content: "\f0b1"
+}
+
+#hotspotter .fa-arrows-alt:before {
+    content: "\f0b2"
+}
+
+#hotspotter .fa-group:before,
+#hotspotter .fa-users:before {
+    content: "\f0c0"
+}
+
+#hotspotter .fa-chain:before,
+#hotspotter .fa-link:before {
+    content: "\f0c1"
+}
+
+#hotspotter .fa-cloud:before {
+    content: "\f0c2"
+}
+
+#hotspotter .fa-flask:before {
+    content: "\f0c3"
+}
+
+#hotspotter .fa-cut:before,
+#hotspotter .fa-scissors:before {
+    content: "\f0c4"
+}
+
+#hotspotter .fa-copy:before,
+#hotspotter .fa-files-o:before {
+    content: "\f0c5"
+}
+
+#hotspotter .fa-paperclip:before {
+    content: "\f0c6"
+}
+
+#hotspotter .fa-floppy-o:before,
+#hotspotter .fa-save:before {
+    content: "\f0c7"
+}
+
+#hotspotter .fa-square:before {
+    content: "\f0c8"
+}
+
+#hotspotter .fa-bars:before,
+#hotspotter .fa-navicon:before,
+#hotspotter .fa-reorder:before {
+    content: "\f0c9"
+}
+
+#hotspotter .fa-list-ul:before {
+    content: "\f0ca"
+}
+
+#hotspotter .fa-list-ol:before {
+    content: "\f0cb"
+}
+
+#hotspotter .fa-strikethrough:before {
+    content: "\f0cc"
+}
+
+#hotspotter .fa-underline:before {
+    content: "\f0cd"
+}
+
+#hotspotter .fa-table:before {
+    content: "\f0ce"
+}
+
+#hotspotter .fa-magic:before {
+    content: "\f0d0"
+}
+
+#hotspotter .fa-truck:before {
+    content: "\f0d1"
+}
+
+#hotspotter .fa-pinterest:before {
+    content: "\f0d2"
+}
+
+#hotspotter .fa-pinterest-square:before {
+    content: "\f0d3"
+}
+
+#hotspotter .fa-google-plus-square:before {
+    content: "\f0d4"
+}
+
+#hotspotter .fa-google-plus:before {
+    content: "\f0d5"
+}
+
+#hotspotter .fa-money:before {
+    content: "\f0d6"
+}
+
+#hotspotter .fa-caret-down:before {
+    content: "\f0d7"
+}
+
+#hotspotter .fa-caret-up:before {
+    content: "\f0d8"
+}
+
+#hotspotter .fa-caret-left:before {
+    content: "\f0d9"
+}
+
+#hotspotter .fa-caret-right:before {
+    content: "\f0da"
+}
+
+#hotspotter .fa-columns:before {
+    content: "\f0db"
+}
+
+#hotspotter .fa-sort:before,
+#hotspotter .fa-unsorted:before {
+    content: "\f0dc"
+}
+
+#hotspotter .fa-sort-desc:before,
+#hotspotter .fa-sort-down:before {
+    content: "\f0dd"
+}
+
+#hotspotter .fa-sort-asc:before,
+#hotspotter .fa-sort-up:before {
+    content: "\f0de"
+}
+
+#hotspotter .fa-envelope:before {
+    content: "\f0e0"
+}
+
+#hotspotter .fa-linkedin:before {
+    content: "\f0e1"
+}
+
+#hotspotter .fa-rotate-left:before,
+#hotspotter .fa-undo:before {
+    content: "\f0e2"
+}
+
+#hotspotter .fa-gavel:before,
+#hotspotter .fa-legal:before {
+    content: "\f0e3"
+}
+
+#hotspotter .fa-dashboard:before,
+#hotspotter .fa-tachometer:before {
+    content: "\f0e4"
+}
+
+#hotspotter .fa-comment-o:before {
+    content: "\f0e5"
+}
+
+#hotspotter .fa-comments-o:before {
+    content: "\f0e6"
+}
+
+#hotspotter .fa-bolt:before,
+#hotspotter .fa-flash:before {
+    content: "\f0e7"
+}
+
+#hotspotter .fa-sitemap:before {
+    content: "\f0e8"
+}
+
+#hotspotter .fa-umbrella:before {
+    content: "\f0e9"
+}
+
+#hotspotter .fa-clipboard:before,
+#hotspotter .fa-paste:before {
+    content: "\f0ea"
+}
+
+#hotspotter .fa-lightbulb-o:before {
+    content: "\f0eb"
+}
+
+#hotspotter .fa-exchange:before {
+    content: "\f0ec"
+}
+
+#hotspotter .fa-cloud-download:before {
+    content: "\f0ed"
+}
+
+#hotspotter .fa-cloud-upload:before {
+    content: "\f0ee"
+}
+
+#hotspotter .fa-user-md:before {
+    content: "\f0f0"
+}
+
+#hotspotter .fa-stethoscope:before {
+    content: "\f0f1"
+}
+
+#hotspotter .fa-suitcase:before {
+    content: "\f0f2"
+}
+
+#hotspotter .fa-bell-o:before {
+    content: "\f0a2"
+}
+
+#hotspotter .fa-coffee:before {
+    content: "\f0f4"
+}
+
+#hotspotter .fa-cutlery:before {
+    content: "\f0f5"
+}
+
+#hotspotter .fa-file-text-o:before {
+    content: "\f0f6"
+}
+
+#hotspotter .fa-building-o:before {
+    content: "\f0f7"
+}
+
+#hotspotter .fa-hospital-o:before {
+    content: "\f0f8"
+}
+
+#hotspotter .fa-ambulance:before {
+    content: "\f0f9"
+}
+
+#hotspotter .fa-medkit:before {
+    content: "\f0fa"
+}
+
+#hotspotter .fa-fighter-jet:before {
+    content: "\f0fb"
+}
+
+#hotspotter .fa-beer:before {
+    content: "\f0fc"
+}
+
+#hotspotter .fa-h-square:before {
+    content: "\f0fd"
+}
+
+#hotspotter .fa-plus-square:before {
+    content: "\f0fe"
+}
+
+#hotspotter .fa-angle-double-left:before {
+    content: "\f100"
+}
+
+#hotspotter .fa-angle-double-right:before {
+    content: "\f101"
+}
+
+#hotspotter .fa-angle-double-up:before {
+    content: "\f102"
+}
+
+#hotspotter .fa-angle-double-down:before {
+    content: "\f103"
+}
+
+#hotspotter .fa-angle-left:before {
+    content: "\f104"
+}
+
+#hotspotter .fa-angle-right:before {
+    content: "\f105"
+}
+
+#hotspotter .fa-angle-up:before {
+    content: "\f106"
+}
+
+#hotspotter .fa-angle-down:before {
+    content: "\f107"
+}
+
+#hotspotter .fa-desktop:before {
+    content: "\f108"
+}
+
+#hotspotter .fa-laptop:before {
+    content: "\f109"
+}
+
+#hotspotter .fa-tablet:before {
+    content: "\f10a"
+}
+
+#hotspotter .fa-mobile-phone:before,
+#hotspotter .fa-mobile:before {
+    content: "\f10b"
+}
+
+#hotspotter .fa-circle-o:before {
+    content: "\f10c"
+}
+
+#hotspotter .fa-quote-left:before {
+    content: "\f10d"
+}
+
+#hotspotter .fa-quote-right:before {
+    content: "\f10e"
+}
+
+#hotspotter .fa-spinner:before {
+    content: "\f110"
+}
+
+#hotspotter .fa-circle:before {
+    content: "\f111"
+}
+
+#hotspotter .fa-mail-reply:before,
+#hotspotter .fa-reply:before {
+    content: "\f112"
+}
+
+#hotspotter .fa-github-alt:before {
+    content: "\f113"
+}
+
+#hotspotter .fa-folder-o:before {
+    content: "\f114"
+}
+
+#hotspotter .fa-folder-open-o:before {
+    content: "\f115"
+}
+
+#hotspotter .fa-smile-o:before {
+    content: "\f118"
+}
+
+#hotspotter .fa-frown-o:before {
+    content: "\f119"
+}
+
+#hotspotter .fa-meh-o:before {
+    content: "\f11a"
+}
+
+#hotspotter .fa-gamepad:before {
+    content: "\f11b"
+}
+
+#hotspotter .fa-keyboard-o:before {
+    content: "\f11c"
+}
+
+#hotspotter .fa-flag-o:before {
+    content: "\f11d"
+}
+
+#hotspotter .fa-flag-checkered:before {
+    content: "\f11e"
+}
+
+#hotspotter .fa-terminal:before {
+    content: "\f120"
+}
+
+#hotspotter .fa-code:before {
+    content: "\f121"
+}
+
+#hotspotter .fa-mail-reply-all:before,
+#hotspotter .fa-reply-all:before {
+    content: "\f122"
+}
+
+#hotspotter .fa-star-half-empty:before,
+#hotspotter .fa-star-half-full:before,
+#hotspotter .fa-star-half-o:before {
+    content: "\f123"
+}
+
+#hotspotter .fa-location-arrow:before {
+    content: "\f124"
+}
+
+#hotspotter .fa-crop:before {
+    content: "\f125"
+}
+
+#hotspotter .fa-code-fork:before {
+    content: "\f126"
+}
+
+#hotspotter .fa-chain-broken:before,
+#hotspotter .fa-unlink:before {
+    content: "\f127"
+}
+
+#hotspotter .fa-question:before {
+    content: "\f128"
+}
+
+#hotspotter .fa-info:before {
+    content: "\f129"
+}
+
+#hotspotter .fa-exclamation:before {
+    content: "\f12a"
+}
+
+#hotspotter .fa-superscript:before {
+    content: "\f12b"
+}
+
+#hotspotter .fa-subscript:before {
+    content: "\f12c"
+}
+
+#hotspotter .fa-eraser:before {
+    content: "\f12d"
+}
+
+#hotspotter .fa-puzzle-piece:before {
+    content: "\f12e"
+}
+
+#hotspotter .fa-microphone:before {
+    content: "\f130"
+}
+
+#hotspotter .fa-microphone-slash:before {
+    content: "\f131"
+}
+
+#hotspotter .fa-shield:before {
+    content: "\f132"
+}
+
+#hotspotter .fa-calendar-o:before {
+    content: "\f133"
+}
+
+#hotspotter .fa-fire-extinguisher:before {
+    content: "\f134"
+}
+
+#hotspotter .fa-rocket:before {
+    content: "\f135"
+}
+
+#hotspotter .fa-maxcdn:before {
+    content: "\f136"
+}
+
+#hotspotter .fa-chevron-circle-left:before {
+    content: "\f137"
+}
+
+#hotspotter .fa-chevron-circle-right:before {
+    content: "\f138"
+}
+
+#hotspotter .fa-chevron-circle-up:before {
+    content: "\f139"
+}
+
+#hotspotter .fa-chevron-circle-down:before {
+    content: "\f13a"
+}
+
+#hotspotter .fa-html5:before {
+    content: "\f13b"
+}
+
+#hotspotter .fa-css3:before {
+    content: "\f13c"
+}
+
+#hotspotter .fa-anchor:before {
+    content: "\f13d"
+}
+
+#hotspotter .fa-unlock-alt:before {
+    content: "\f13e"
+}
+
+#hotspotter .fa-bullseye:before {
+    content: "\f140"
+}
+
+#hotspotter .fa-ellipsis-h:before {
+    content: "\f141"
+}
+
+#hotspotter .fa-ellipsis-v:before {
+    content: "\f142"
+}
+
+#hotspotter .fa-rss-square:before {
+    content: "\f143"
+}
+
+#hotspotter .fa-play-circle:before {
+    content: "\f144"
+}
+
+#hotspotter .fa-ticket:before {
+    content: "\f145"
+}
+
+#hotspotter .fa-minus-square:before {
+    content: "\f146"
+}
+
+#hotspotter .fa-minus-square-o:before {
+    content: "\f147"
+}
+
+#hotspotter .fa-level-up:before {
+    content: "\f148"
+}
+
+#hotspotter .fa-level-down:before {
+    content: "\f149"
+}
+
+#hotspotter .fa-check-square:before {
+    content: "\f14a"
+}
+
+#hotspotter .fa-pencil-square:before {
+    content: "\f14b"
+}
+
+#hotspotter .fa-external-link-square:before {
+    content: "\f14c"
+}
+
+#hotspotter .fa-share-square:before {
+    content: "\f14d"
+}
+
+#hotspotter .fa-compass:before {
+    content: "\f14e"
+}
+
+#hotspotter .fa-caret-square-o-down:before,
+#hotspotter .fa-toggle-down:before {
+    content: "\f150"
+}
+
+#hotspotter .fa-caret-square-o-up:before,
+#hotspotter .fa-toggle-up:before {
+    content: "\f151"
+}
+
+#hotspotter .fa-caret-square-o-right:before,
+#hotspotter .fa-toggle-right:before {
+    content: "\f152"
+}
+
+#hotspotter .fa-eur:before,
+#hotspotter .fa-euro:before {
+    content: "\f153"
+}
+
+#hotspotter .fa-gbp:before {
+    content: "\f154"
+}
+
+#hotspotter .fa-dollar:before,
+#hotspotter .fa-usd:before {
+    content: "\f155"
+}
+
+#hotspotter .fa-inr:before,
+#hotspotter .fa-rupee:before {
+    content: "\f156"
+}
+
+#hotspotter .fa-cny:before,
+#hotspotter .fa-jpy:before,
+#hotspotter .fa-rmb:before,
+#hotspotter .fa-yen:before {
+    content: "\f157"
+}
+
+#hotspotter .fa-rouble:before,
+#hotspotter .fa-rub:before,
+#hotspotter .fa-ruble:before {
+    content: "\f158"
+}
+
+#hotspotter .fa-krw:before,
+#hotspotter .fa-won:before {
+    content: "\f159"
+}
+
+#hotspotter .fa-bitcoin:before,
+#hotspotter .fa-btc:before {
+    content: "\f15a"
+}
+
+#hotspotter .fa-file:before {
+    content: "\f15b"
+}
+
+#hotspotter .fa-file-text:before {
+    content: "\f15c"
+}
+
+#hotspotter .fa-sort-alpha-asc:before {
+    content: "\f15d"
+}
+
+#hotspotter .fa-sort-alpha-desc:before {
+    content: "\f15e"
+}
+
+#hotspotter .fa-sort-amount-asc:before {
+    content: "\f160"
+}
+
+#hotspotter .fa-sort-amount-desc:before {
+    content: "\f161"
+}
+
+#hotspotter .fa-sort-numeric-asc:before {
+    content: "\f162"
+}
+
+#hotspotter .fa-sort-numeric-desc:before {
+    content: "\f163"
+}
+
+#hotspotter .fa-thumbs-up:before {
+    content: "\f164"
+}
+
+#hotspotter .fa-thumbs-down:before {
+    content: "\f165"
+}
+
+#hotspotter .fa-youtube-square:before {
+    content: "\f166"
+}
+
+#hotspotter .fa-youtube:before {
+    content: "\f167"
+}
+
+#hotspotter .fa-xing:before {
+    content: "\f168"
+}
+
+#hotspotter .fa-xing-square:before {
+    content: "\f169"
+}
+
+#hotspotter .fa-youtube-play:before {
+    content: "\f16a"
+}
+
+#hotspotter .fa-dropbox:before {
+    content: "\f16b"
+}
+
+#hotspotter .fa-stack-overflow:before {
+    content: "\f16c"
+}
+
+#hotspotter .fa-instagram:before {
+    content: "\f16d"
+}
+
+#hotspotter .fa-flickr:before {
+    content: "\f16e"
+}
+
+#hotspotter .fa-adn:before {
+    content: "\f170"
+}
+
+#hotspotter .fa-bitbucket:before {
+    content: "\f171"
+}
+
+#hotspotter .fa-bitbucket-square:before {
+    content: "\f172"
+}
+
+#hotspotter .fa-tumblr:before {
+    content: "\f173"
+}
+
+#hotspotter .fa-tumblr-square:before {
+    content: "\f174"
+}
+
+#hotspotter .fa-long-arrow-down:before {
+    content: "\f175"
+}
+
+#hotspotter .fa-long-arrow-up:before {
+    content: "\f176"
+}
+
+#hotspotter .fa-long-arrow-left:before {
+    content: "\f177"
+}
+
+#hotspotter .fa-long-arrow-right:before {
+    content: "\f178"
+}
+
+#hotspotter .fa-apple:before {
+    content: "\f179"
+}
+
+#hotspotter .fa-windows:before {
+    content: "\f17a"
+}
+
+#hotspotter .fa-android:before {
+    content: "\f17b"
+}
+
+#hotspotter .fa-linux:before {
+    content: "\f17c"
+}
+
+#hotspotter .fa-dribbble:before {
+    content: "\f17d"
+}
+
+#hotspotter .fa-skype:before {
+    content: "\f17e"
+}
+
+#hotspotter .fa-foursquare:before {
+    content: "\f180"
+}
+
+#hotspotter .fa-trello:before {
+    content: "\f181"
+}
+
+#hotspotter .fa-female:before {
+    content: "\f182"
+}
+
+#hotspotter .fa-male:before {
+    content: "\f183"
+}
+
+#hotspotter .fa-gittip:before,
+#hotspotter .fa-gratipay:before {
+    content: "\f184"
+}
+
+#hotspotter .fa-sun-o:before {
+    content: "\f185"
+}
+
+#hotspotter .fa-moon-o:before {
+    content: "\f186"
+}
+
+#hotspotter .fa-archive:before {
+    content: "\f187"
+}
+
+#hotspotter .fa-bug:before {
+    content: "\f188"
+}
+
+#hotspotter .fa-vk:before {
+    content: "\f189"
+}
+
+#hotspotter .fa-weibo:before {
+    content: "\f18a"
+}
+
+#hotspotter .fa-renren:before {
+    content: "\f18b"
+}
+
+#hotspotter .fa-pagelines:before {
+    content: "\f18c"
+}
+
+#hotspotter .fa-stack-exchange:before {
+    content: "\f18d"
+}
+
+#hotspotter .fa-arrow-circle-o-right:before {
+    content: "\f18e"
+}
+
+#hotspotter .fa-arrow-circle-o-left:before {
+    content: "\f190"
+}
+
+#hotspotter .fa-caret-square-o-left:before,
+#hotspotter .fa-toggle-left:before {
+    content: "\f191"
+}
+
+#hotspotter .fa-dot-circle-o:before {
+    content: "\f192"
+}
+
+#hotspotter .fa-wheelchair:before {
+    content: "\f193"
+}
+
+#hotspotter .fa-vimeo-square:before {
+    content: "\f194"
+}
+
+#hotspotter .fa-try:before,
+#hotspotter .fa-turkish-lira:before {
+    content: "\f195"
+}
+
+#hotspotter .fa-plus-square-o:before {
+    content: "\f196"
+}
+
+#hotspotter .fa-space-shuttle:before {
+    content: "\f197"
+}
+
+#hotspotter .fa-slack:before {
+    content: "\f198"
+}
+
+#hotspotter .fa-envelope-square:before {
+    content: "\f199"
+}
+
+#hotspotter .fa-wordpress:before {
+    content: "\f19a"
+}
+
+#hotspotter .fa-openid:before {
+    content: "\f19b"
+}
+
+#hotspotter .fa-bank:before,
+#hotspotter .fa-institution:before,
+#hotspotter .fa-university:before {
+    content: "\f19c"
+}
+
+#hotspotter .fa-graduation-cap:before,
+#hotspotter .fa-mortar-board:before {
+    content: "\f19d"
+}
+
+#hotspotter .fa-yahoo:before {
+    content: "\f19e"
+}
+
+#hotspotter .fa-google:before {
+    content: "\f1a0"
+}
+
+#hotspotter .fa-reddit:before {
+    content: "\f1a1"
+}
+
+#hotspotter .fa-reddit-square:before {
+    content: "\f1a2"
+}
+
+#hotspotter .fa-stumbleupon-circle:before {
+    content: "\f1a3"
+}
+
+#hotspotter .fa-stumbleupon:before {
+    content: "\f1a4"
+}
+
+#hotspotter .fa-delicious:before {
+    content: "\f1a5"
+}
+
+#hotspotter .fa-digg:before {
+    content: "\f1a6"
+}
+
+#hotspotter .fa-pied-piper:before {
+    content: "\f1a7"
+}
+
+#hotspotter .fa-pied-piper-alt:before {
+    content: "\f1a8"
+}
+
+#hotspotter .fa-drupal:before {
+    content: "\f1a9"
+}
+
+#hotspotter .fa-joomla:before {
+    content: "\f1aa"
+}
+
+#hotspotter .fa-language:before {
+    content: "\f1ab"
+}
+
+#hotspotter .fa-fax:before {
+    content: "\f1ac"
+}
+
+#hotspotter .fa-building:before {
+    content: "\f1ad"
+}
+
+#hotspotter .fa-child:before {
+    content: "\f1ae"
+}
+
+#hotspotter .fa-paw:before {
+    content: "\f1b0"
+}
+
+#hotspotter .fa-spoon:before {
+    content: "\f1b1"
+}
+
+#hotspotter .fa-cube:before {
+    content: "\f1b2"
+}
+
+#hotspotter .fa-cubes:before {
+    content: "\f1b3"
+}
+
+#hotspotter .fa-behance:before {
+    content: "\f1b4"
+}
+
+#hotspotter .fa-behance-square:before {
+    content: "\f1b5"
+}
+
+#hotspotter .fa-steam:before {
+    content: "\f1b6"
+}
+
+#hotspotter .fa-steam-square:before {
+    content: "\f1b7"
+}
+
+#hotspotter .fa-recycle:before {
+    content: "\f1b8"
+}
+
+#hotspotter .fa-automobile:before,
+#hotspotter .fa-car:before {
+    content: "\f1b9"
+}
+
+#hotspotter .fa-cab:before,
+#hotspotter .fa-taxi:before {
+    content: "\f1ba"
+}
+
+#hotspotter .fa-tree:before {
+    content: "\f1bb"
+}
+
+#hotspotter .fa-spotify:before {
+    content: "\f1bc"
+}
+
+#hotspotter .fa-deviantart:before {
+    content: "\f1bd"
+}
+
+#hotspotter .fa-soundcloud:before {
+    content: "\f1be"
+}
+
+#hotspotter .fa-database:before {
+    content: "\f1c0"
+}
+
+#hotspotter .fa-file-pdf-o:before {
+    content: "\f1c1"
+}
+
+#hotspotter .fa-file-word-o:before {
+    content: "\f1c2"
+}
+
+#hotspotter .fa-file-excel-o:before {
+    content: "\f1c3"
+}
+
+#hotspotter .fa-file-powerpoint-o:before {
+    content: "\f1c4"
+}
+
+#hotspotter .fa-file-image-o:before,
+#hotspotter .fa-file-photo-o:before,
+#hotspotter .fa-file-picture-o:before {
+    content: "\f1c5"
+}
+
+#hotspotter .fa-file-archive-o:before,
+#hotspotter .fa-file-zip-o:before {
+    content: "\f1c6"
+}
+
+#hotspotter .fa-file-audio-o:before,
+#hotspotter .fa-file-sound-o:before {
+    content: "\f1c7"
+}
+
+#hotspotter .fa-file-movie-o:before,
+#hotspotter .fa-file-video-o:before {
+    content: "\f1c8"
+}
+
+#hotspotter .fa-file-code-o:before {
+    content: "\f1c9"
+}
+
+#hotspotter .fa-vine:before {
+    content: "\f1ca"
+}
+
+#hotspotter .fa-codepen:before {
+    content: "\f1cb"
+}
+
+#hotspotter .fa-jsfiddle:before {
+    content: "\f1cc"
+}
+
+#hotspotter .fa-life-bouy:before,
+#hotspotter .fa-life-buoy:before,
+#hotspotter .fa-life-ring:before,
+#hotspotter .fa-life-saver:before,
+#hotspotter .fa-support:before {
+    content: "\f1cd"
+}
+
+#hotspotter .fa-circle-o-notch:before {
+    content: "\f1ce"
+}
+
+#hotspotter .fa-ra:before,
+#hotspotter .fa-rebel:before {
+    content: "\f1d0"
+}
+
+#hotspotter .fa-empire:before,
+#hotspotter .fa-ge:before {
+    content: "\f1d1"
+}
+
+#hotspotter .fa-git-square:before {
+    content: "\f1d2"
+}
+
+#hotspotter .fa-git:before {
+    content: "\f1d3"
+}
+
+#hotspotter .fa-hacker-news:before,
+#hotspotter .fa-y-combinator-square:before,
+#hotspotter .fa-yc-square:before {
+    content: "\f1d4"
+}
+
+#hotspotter .fa-tencent-weibo:before {
+    content: "\f1d5"
+}
+
+#hotspotter .fa-qq:before {
+    content: "\f1d6"
+}
+
+#hotspotter .fa-wechat:before,
+#hotspotter .fa-weixin:before {
+    content: "\f1d7"
+}
+
+#hotspotter .fa-paper-plane:before,
+#hotspotter .fa-send:before {
+    content: "\f1d8"
+}
+
+#hotspotter .fa-paper-plane-o:before,
+#hotspotter .fa-send-o:before {
+    content: "\f1d9"
+}
+
+#hotspotter .fa-history:before {
+    content: "\f1da"
+}
+
+#hotspotter .fa-circle-thin:before {
+    content: "\f1db"
+}
+
+#hotspotter .fa-header:before {
+    content: "\f1dc"
+}
+
+#hotspotter .fa-paragraph:before {
+    content: "\f1dd"
+}
+
+#hotspotter .fa-sliders:before {
+    content: "\f1de"
+}
+
+#hotspotter .fa-share-alt:before {
+    content: "\f1e0"
+}
+
+#hotspotter .fa-share-alt-square:before {
+    content: "\f1e1"
+}
+
+#hotspotter .fa-bomb:before {
+    content: "\f1e2"
+}
+
+#hotspotter .fa-futbol-o:before,
+#hotspotter .fa-soccer-ball-o:before {
+    content: "\f1e3"
+}
+
+#hotspotter .fa-tty:before {
+    content: "\f1e4"
+}
+
+#hotspotter .fa-binoculars:before {
+    content: "\f1e5"
+}
+
+#hotspotter .fa-plug:before {
+    content: "\f1e6"
+}
+
+#hotspotter .fa-slideshare:before {
+    content: "\f1e7"
+}
+
+#hotspotter .fa-twitch:before {
+    content: "\f1e8"
+}
+
+#hotspotter .fa-yelp:before {
+    content: "\f1e9"
+}
+
+#hotspotter .fa-newspaper-o:before {
+    content: "\f1ea"
+}
+
+#hotspotter .fa-wifi:before {
+    content: "\f1eb"
+}
+
+#hotspotter .fa-calculator:before {
+    content: "\f1ec"
+}
+
+#hotspotter .fa-paypal:before {
+    content: "\f1ed"
+}
+
+#hotspotter .fa-google-wallet:before {
+    content: "\f1ee"
+}
+
+#hotspotter .fa-cc-visa:before {
+    content: "\f1f0"
+}
+
+#hotspotter .fa-cc-mastercard:before {
+    content: "\f1f1"
+}
+
+#hotspotter .fa-cc-discover:before {
+    content: "\f1f2"
+}
+
+#hotspotter .fa-cc-amex:before {
+    content: "\f1f3"
+}
+
+#hotspotter .fa-cc-paypal:before {
+    content: "\f1f4"
+}
+
+#hotspotter .fa-cc-stripe:before {
+    content: "\f1f5"
+}
+
+#hotspotter .fa-bell-slash:before {
+    content: "\f1f6"
+}
+
+#hotspotter .fa-bell-slash-o:before {
+    content: "\f1f7"
+}
+
+#hotspotter .fa-trash:before {
+    content: "\f1f8"
+}
+
+#hotspotter .fa-copyright:before {
+    content: "\f1f9"
+}
+
+#hotspotter .fa-at:before {
+    content: "\f1fa"
+}
+
+#hotspotter .fa-eyedropper:before {
+    content: "\f1fb"
+}
+
+#hotspotter .fa-paint-brush:before {
+    content: "\f1fc"
+}
+
+#hotspotter .fa-birthday-cake:before {
+    content: "\f1fd"
+}
+
+#hotspotter .fa-area-chart:before {
+    content: "\f1fe"
+}
+
+#hotspotter .fa-pie-chart:before {
+    content: "\f200"
+}
+
+#hotspotter .fa-line-chart:before {
+    content: "\f201"
+}
+
+#hotspotter .fa-lastfm:before {
+    content: "\f202"
+}
+
+#hotspotter .fa-lastfm-square:before {
+    content: "\f203"
+}
+
+#hotspotter .fa-toggle-off:before {
+    content: "\f204"
+}
+
+#hotspotter .fa-toggle-on:before {
+    content: "\f205"
+}
+
+#hotspotter .fa-bicycle:before {
+    content: "\f206"
+}
+
+#hotspotter .fa-bus:before {
+    content: "\f207"
+}
+
+#hotspotter .fa-ioxhost:before {
+    content: "\f208"
+}
+
+#hotspotter .fa-angellist:before {
+    content: "\f209"
+}
+
+#hotspotter .fa-cc:before {
+    content: "\f20a"
+}
+
+#hotspotter .fa-ils:before,
+#hotspotter .fa-shekel:before,
+#hotspotter .fa-sheqel:before {
+    content: "\f20b"
+}
+
+#hotspotter .fa-meanpath:before {
+    content: "\f20c"
+}
+
+#hotspotter .fa-buysellads:before {
+    content: "\f20d"
+}
+
+#hotspotter .fa-connectdevelop:before {
+    content: "\f20e"
+}
+
+#hotspotter .fa-dashcube:before {
+    content: "\f210"
+}
+
+#hotspotter .fa-forumbee:before {
+    content: "\f211"
+}
+
+#hotspotter .fa-leanpub:before {
+    content: "\f212"
+}
+
+#hotspotter .fa-sellsy:before {
+    content: "\f213"
+}
+
+#hotspotter .fa-shirtsinbulk:before {
+    content: "\f214"
+}
+
+#hotspotter .fa-simplybuilt:before {
+    content: "\f215"
+}
+
+#hotspotter .fa-skyatlas:before {
+    content: "\f216"
+}
+
+#hotspotter .fa-cart-plus:before {
+    content: "\f217"
+}
+
+#hotspotter .fa-cart-arrow-down:before {
+    content: "\f218"
+}
+
+#hotspotter .fa-diamond:before {
+    content: "\f219"
+}
+
+#hotspotter .fa-ship:before {
+    content: "\f21a"
+}
+
+#hotspotter .fa-user-secret:before {
+    content: "\f21b"
+}
+
+#hotspotter .fa-motorcycle:before {
+    content: "\f21c"
+}
+
+#hotspotter .fa-street-view:before {
+    content: "\f21d"
+}
+
+#hotspotter .fa-heartbeat:before {
+    content: "\f21e"
+}
+
+#hotspotter .fa-venus:before {
+    content: "\f221"
+}
+
+#hotspotter .fa-mars:before {
+    content: "\f222"
+}
+
+#hotspotter .fa-mercury:before {
+    content: "\f223"
+}
+
+#hotspotter .fa-intersex:before,
+#hotspotter .fa-transgender:before {
+    content: "\f224"
+}
+
+#hotspotter .fa-transgender-alt:before {
+    content: "\f225"
+}
+
+#hotspotter .fa-venus-double:before {
+    content: "\f226"
+}
+
+#hotspotter .fa-mars-double:before {
+    content: "\f227"
+}
+
+#hotspotter .fa-venus-mars:before {
+    content: "\f228"
+}
+
+#hotspotter .fa-mars-stroke:before {
+    content: "\f229"
+}
+
+#hotspotter .fa-mars-stroke-v:before {
+    content: "\f22a"
+}
+
+#hotspotter .fa-mars-stroke-h:before {
+    content: "\f22b"
+}
+
+#hotspotter .fa-neuter:before {
+    content: "\f22c"
+}
+
+#hotspotter .fa-genderless:before {
+    content: "\f22d"
+}
+
+#hotspotter .fa-facebook-official:before {
+    content: "\f230"
+}
+
+#hotspotter .fa-pinterest-p:before {
+    content: "\f231"
+}
+
+#hotspotter .fa-whatsapp:before {
+    content: "\f232"
+}
+
+#hotspotter .fa-server:before {
+    content: "\f233"
+}
+
+#hotspotter .fa-user-plus:before {
+    content: "\f234"
+}
+
+#hotspotter .fa-user-times:before {
+    content: "\f235"
+}
+
+#hotspotter .fa-bed:before,
+#hotspotter .fa-hotel:before {
+    content: "\f236"
+}
+
+#hotspotter .fa-viacoin:before {
+    content: "\f237"
+}
+
+#hotspotter .fa-train:before {
+    content: "\f238"
+}
+
+#hotspotter .fa-subway:before {
+    content: "\f239"
+}
+
+#hotspotter .fa-medium:before {
+    content: "\f23a"
+}
+
+#hotspotter .fa-y-combinator:before,
+#hotspotter .fa-yc:before {
+    content: "\f23b"
+}
+
+#hotspotter .fa-optin-monster:before {
+    content: "\f23c"
+}
+
+#hotspotter .fa-opencart:before {
+    content: "\f23d"
+}
+
+#hotspotter .fa-expeditedssl:before {
+    content: "\f23e"
+}
+
+#hotspotter .fa-battery-4:before,
+#hotspotter .fa-battery-full:before {
+    content: "\f240"
+}
+
+#hotspotter .fa-battery-3:before,
+#hotspotter .fa-battery-three-quarters:before {
+    content: "\f241"
+}
+
+#hotspotter .fa-battery-2:before,
+#hotspotter .fa-battery-half:before {
+    content: "\f242"
+}
+
+#hotspotter .fa-battery-1:before,
+#hotspotter .fa-battery-quarter:before {
+    content: "\f243"
+}
+
+#hotspotter .fa-battery-0:before,
+#hotspotter .fa-battery-empty:before {
+    content: "\f244"
+}
+
+#hotspotter .fa-mouse-pointer:before {
+    content: "\f245"
+}
+
+#hotspotter .fa-i-cursor:before {
+    content: "\f246"
+}
+
+#hotspotter .fa-object-group:before {
+    content: "\f247"
+}
+
+#hotspotter .fa-object-ungroup:before {
+    content: "\f248"
+}
+
+#hotspotter .fa-sticky-note:before {
+    content: "\f249"
+}
+
+#hotspotter .fa-sticky-note-o:before {
+    content: "\f24a"
+}
+
+#hotspotter .fa-cc-jcb:before {
+    content: "\f24b"
+}
+
+#hotspotter .fa-cc-diners-club:before {
+    content: "\f24c"
+}
+
+#hotspotter .fa-clone:before {
+    content: "\f24d"
+}
+
+#hotspotter .fa-balance-scale:before {
+    content: "\f24e"
+}
+
+#hotspotter .fa-hourglass-o:before {
+    content: "\f250"
+}
+
+#hotspotter .fa-hourglass-1:before,
+#hotspotter .fa-hourglass-start:before {
+    content: "\f251"
+}
+
+#hotspotter .fa-hourglass-2:before,
+#hotspotter .fa-hourglass-half:before {
+    content: "\f252"
+}
+
+#hotspotter .fa-hourglass-3:before,
+#hotspotter .fa-hourglass-end:before {
+    content: "\f253"
+}
+
+#hotspotter .fa-hourglass:before {
+    content: "\f254"
+}
+
+#hotspotter .fa-hand-grab-o:before,
+#hotspotter .fa-hand-rock-o:before {
+    content: "\f255"
+}
+
+#hotspotter .fa-hand-paper-o:before,
+#hotspotter .fa-hand-stop-o:before {
+    content: "\f256"
+}
+
+#hotspotter .fa-hand-scissors-o:before {
+    content: "\f257"
+}
+
+#hotspotter .fa-hand-lizard-o:before {
+    content: "\f258"
+}
+
+#hotspotter .fa-hand-spock-o:before {
+    content: "\f259"
+}
+
+#hotspotter .fa-hand-pointer-o:before {
+    content: "\f25a"
+}
+
+#hotspotter .fa-hand-peace-o:before {
+    content: "\f25b"
+}
+
+#hotspotter .fa-trademark:before {
+    content: "\f25c"
+}
+
+#hotspotter .fa-registered:before {
+    content: "\f25d"
+}
+
+#hotspotter .fa-creative-commons:before {
+    content: "\f25e"
+}
+
+#hotspotter .fa-gg:before {
+    content: "\f260"
+}
+
+#hotspotter .fa-gg-circle:before {
+    content: "\f261"
+}
+
+#hotspotter .fa-tripadvisor:before {
+    content: "\f262"
+}
+
+#hotspotter .fa-odnoklassniki:before {
+    content: "\f263"
+}
+
+#hotspotter .fa-odnoklassniki-square:before {
+    content: "\f264"
+}
+
+#hotspotter .fa-get-pocket:before {
+    content: "\f265"
+}
+
+#hotspotter .fa-wikipedia-w:before {
+    content: "\f266"
+}
+
+#hotspotter .fa-safari:before {
+    content: "\f267"
+}
+
+#hotspotter .fa-chrome:before {
+    content: "\f268"
+}
+
+#hotspotter .fa-firefox:before {
+    content: "\f269"
+}
+
+#hotspotter .fa-opera:before {
+    content: "\f26a"
+}
+
+#hotspotter .fa-internet-explorer:before {
+    content: "\f26b"
+}
+
+#hotspotter .fa-television:before,
+#hotspotter .fa-tv:before {
+    content: "\f26c"
+}
+
+#hotspotter .fa-contao:before {
+    content: "\f26d"
+}
+
+#hotspotter .fa-500px:before {
+    content: "\f26e"
+}
+
+#hotspotter .fa-amazon:before {
+    content: "\f270"
+}
+
+#hotspotter .fa-calendar-plus-o:before {
+    content: "\f271"
+}
+
+#hotspotter .fa-calendar-minus-o:before {
+    content: "\f272"
+}
+
+#hotspotter .fa-calendar-times-o:before {
+    content: "\f273"
+}
+
+#hotspotter .fa-calendar-check-o:before {
+    content: "\f274"
+}
+
+#hotspotter .fa-industry:before {
+    content: "\f275"
+}
+
+#hotspotter .fa-map-pin:before {
+    content: "\f276"
+}
+
+#hotspotter .fa-map-signs:before {
+    content: "\f277"
+}
+
+#hotspotter .fa-map-o:before {
+    content: "\f278"
+}
+
+#hotspotter .fa-map:before {
+    content: "\f279"
+}
+
+#hotspotter .fa-commenting:before {
+    content: "\f27a"
+}
+
+#hotspotter .fa-commenting-o:before {
+    content: "\f27b"
+}
+
+#hotspotter .fa-houzz:before {
+    content: "\f27c"
+}
+
+#hotspotter .fa-vimeo:before {
+    content: "\f27d"
+}
+
+#hotspotter .fa-black-tie:before {
+    content: "\f27e"
+}
+
+#hotspotter .fa-fonticons:before {
+    content: "\f280"
+}
+
+#hotspotter .fa-reddit-alien:before {
+    content: "\f281"
+}
+
+#hotspotter .fa-edge:before {
+    content: "\f282"
+}
+
+#hotspotter .fa-credit-card-alt:before {
+    content: "\f283"
+}
+
+#hotspotter .fa-codiepie:before {
+    content: "\f284"
+}
+
+#hotspotter .fa-modx:before {
+    content: "\f285"
+}
+
+#hotspotter .fa-fort-awesome:before {
+    content: "\f286"
+}
+
+#hotspotter .fa-usb:before {
+    content: "\f287"
+}
+
+#hotspotter .fa-product-hunt:before {
+    content: "\f288"
+}
+
+#hotspotter .fa-mixcloud:before {
+    content: "\f289"
+}
+
+#hotspotter .fa-scribd:before {
+    content: "\f28a"
+}
+
+#hotspotter .fa-pause-circle:before {
+    content: "\f28b"
+}
+
+#hotspotter .fa-pause-circle-o:before {
+    content: "\f28c"
+}
+
+#hotspotter .fa-stop-circle:before {
+    content: "\f28d"
+}
+
+#hotspotter .fa-stop-circle-o:before {
+    content: "\f28e"
+}
+
+#hotspotter .fa-shopping-bag:before {
+    content: "\f290"
+}
+
+#hotspotter .fa-shopping-basket:before {
+    content: "\f291"
+}
+
+#hotspotter .fa-hashtag:before {
+    content: "\f292"
+}
+
+#hotspotter .fa-bluetooth:before {
+    content: "\f293"
+}
+
+#hotspotter .fa-bluetooth-b:before {
+    content: "\f294"
+}
+
+#hotspotter .fa-percent:before {
+    content: "\f295"
+}
+
+#hotspotter .squares-clear {
+    clear: both
+}
+
+#hotspotter .squares-element {
+    float: left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box
+}
+
+#hotspotter .squares-element>* {
+    margin: 0
+}
+
+#hotspotter .squares-element img,
+#hotspotter .squares-element video {
+    max-width: 100%
+}
+
+#hotspotter .squares-button {
+    text-decoration: none;
+    text-align: center
+}
+
+#hotspotter .squares-button:hover {
+    filter: brightness(1.1);
+    -moz-filter: brightness(1.1);
+    -webkit-filter: brightness(1.1)
+}
+
+#hotspotter .squares-button:active {
+    filter: brightness(0.9);
+    -moz-filter: brightness(0.9);
+    -webkit-filter: brightness(0.9)
+}
