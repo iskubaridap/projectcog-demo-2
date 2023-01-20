@@ -20,22 +20,24 @@
         @import '/assets/css/responsiveslides.css';
     </style>
     <body class="sb-nav-fixed">
-        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <nav class="sb-topnav navbar navbar-expand navbar-light bg-light-gray">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="../index.html">Welcome</a>
+            <a class="navbar-brand ps-3" href="index.html"><span class="text-gray">Welcome</span></a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
-            <!-- Navbar Search-->
+            <!-- Navbar Search
             <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
                 <div class="input-group">
                     <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
                     <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
                 </div>
-            </form>
+            </form>-->
+             <!-- darkmode option-->
+             <img class="d-none d-md-inline-block ms-auto me-0 me-md-3 my-2 my-md-0" id="icon" src="/assets/imgs/icons/moon.png">
             <!-- Navbar-->
             <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw text-gray"></i></a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#!">Settings</a></li>
                         <li><a class="dropdown-item" href="#!">Activity Log</a></li>
@@ -50,15 +52,15 @@
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            <div class="sb-sidenav-menu-heading">Home</div>
+                            <div class="sb-sidenav-menu-heading"><span class="text-gray">Home</span></div>
                             <a class="nav-link" href="../index.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-home"></i></div>
-                                Home
+                                <div class="sb-nav-link-icon"><i class="fas fa-home text-gray"></i></div>
+                                <span class="text-gray">Home</span>
                             </a>
-                            <div class="sb-sidenav-menu-heading">Features</div>
+                            <div class="sb-sidenav-menu-heading"><span class="text-gray">Features</span></div>
                             <a class="nav-link" href="#">
-                                <div class="sb-nav-link-icon"><i class="fas fa-gamepad"></i></div>
-                                App & Game Development
+                                <div class="sb-nav-link-icon"><i class="fas fa-gamepad text-gray"></i></div>
+                                <span class="text-gray">App & Game Development</span>
                                 <!-- <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div> -->
                             </a>
                             <!-- <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
@@ -67,14 +69,14 @@
                                     <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
                                 </nav>
                             </div> -->
-                            <a class="nav-link" href="/pages/e-learning.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-lines-leaning"></i></div>
-                                E-learning Solution
+                            <a class="nav-link collapsed" href="e-learning.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-lines-leaning text-gray"></i></div>
+                                <span class="text-gray">E-learning Solution</span>
                                 <!-- <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div> -->
                             </a>
-                            <a class="nav-link" href="/pages/widgets-or-not.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-pencil"></i></div>
-                                Widgets & What-nots
+                            <a class="nav-link collapsed" href="widgets-or-not.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-pencil text-gray"></i></div>
+                                <span class="text-gray">Widgets & What-nots</span>
                                 <!-- <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div> -->
                             </a>
                             <!-- <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
@@ -103,10 +105,10 @@
                                     </div>
                                 </nav>
                             </div> -->
-                            <div class="sb-sidenav-menu-heading">Contact Us</div>
-                            <a class="nav-link" href="/pages/contact.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-address-book"></i></div>
-                                Form
+                            <div class="sb-sidenav-menu-heading"><span class="text-gray">Contact Us</span></div>
+                            <a class="nav-link" href="contact.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-address-book text-gray"></i></div>
+                                <span class="text-gray">Form</span>
                             </a>
                             <!-- <a class="nav-link" href="tables.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
@@ -115,8 +117,8 @@
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as:</div>
-                        Start Bootstrap
+                        <!-- <div class="small">Logged in as:</div>
+                        Start Bootstrap -->
                     </div>
                 </nav>
             </div>
@@ -444,7 +446,7 @@
                             </div>
                         </section>
                 </main>
-                <footer class="py-4 bg-light mt-auto">
+                <footer class="py-4 bg-light-gray mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
                             <div class="text-muted">Copyright &copy; ProjectCog LLC.</div>
@@ -458,7 +460,18 @@
                 </footer>
             </div>
         </div>
+        <script>
+            var icon =  document.getElementById("icon");
 
+            icon.onclick = function click(){
+                document.body.classList.toggle("dark-theme");
+                if(document.body.classList.contains("dark-theme")){
+                    icon.src = "/assets/imgs/icons/sun.png";
+                }else{
+                    icon.src = "/assets/imgs/icons/moon.png";
+                }
+            }
+        </script>
         <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="/assets/js/scripts.js"></script>
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script> -->

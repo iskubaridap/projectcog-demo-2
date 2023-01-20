@@ -3509,7 +3509,7 @@ body.unresolved #hotspotter {
 }
 
 #hotspotter .bg-lightblue {
-    background-color: #f0f5f7
+    background-color: var(--lightblue);
 }
 
 #hotspotter .screenshot {

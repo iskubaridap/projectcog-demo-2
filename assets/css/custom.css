@@ -12,6 +12,25 @@ body {
     padding-top: 3rem;
     padding-bottom: 80px;
 }
+
+.dark-theme{
+    --dark-brown: #fff;
+    --cyan: #68AAA2;
+    --orange: #E64930;
+    --cream: #212529;
+    --light-gray: #212529;
+    --gray-lighter: #212529;
+    --bs-gray-600: #fff;
+    --white-pure: #212529;
+    --black: #fff;
+
+    --lightblue: #212529;
+}
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+}
 .parallax-bg-robot {
     background-image: url(../imgs/website_layout_cutouttop_nopipes-2.png);
     min-height: 500px;
@@ -90,7 +109,15 @@ body {
 .side-content{
     background-color: var(--cream);
 }
-
+.bg-light-gray{
+    background-color: var( --gray-lighter);
+}
+.bg-dark-gray{
+    background-color: var(--gray-darker);
+}
+.navbar-light{
+    background-color: var( --gray-lighter);
+}
 .main-content{
     background-color: var(--white-pure);
 }
@@ -220,6 +247,12 @@ body {
 .text-dark-brown {
     color: var(--dark-brown);
 }
+.text-black{
+    color: var(--black);
+}
+.text-gray{
+    color: var(--bs-gray-600);
+}
 .bg-cream {
     background-color: var(--cream);
 }
@@ -229,8 +262,8 @@ body {
 .bg-dark-brown {
     background-color: var(--dark-brown);
 }
-.bg-white {
-    background-color: var(--white);
+.bg-light-gray {
+    background-color: var(--light-gray);
 }
 .bg-yellow {
     background-color: var(--yellow);
@@ -475,3 +508,4 @@ body {
 }
 @media (max-width:440px){
 }
+

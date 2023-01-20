@@ -20,22 +20,24 @@
         @import '/assets/css/responsiveslides.css';
     </style>
     <body class="sb-nav-fixed">
-        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+        <nav class="sb-topnav navbar navbar-expand navbar-light bg-light-gray">
             <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="../index.html">Welcome</a>
+            <a class="navbar-brand ps-3" href="index.html"><span class="text-gray">Welcome</span></a>
             <!-- Sidebar Toggle-->
             <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
-            <!-- Navbar Search-->
+            <!-- Navbar Search
             <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
                 <div class="input-group">
                     <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
                     <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
                 </div>
-            </form>
+            </form>-->
+             <!-- darkmode option-->
+             <img class="d-none d-md-inline-block ms-auto me-0 me-md-3 my-2 my-md-0" id="icon" src="/assets/imgs/icons/moon.png">
             <!-- Navbar-->
             <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw text-gray"></i></a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#!">Settings</a></li>
                         <li><a class="dropdown-item" href="#!">Activity Log</a></li>
@@ -50,15 +52,15 @@
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            <div class="sb-sidenav-menu-heading">Home</div>
+                            <div class="sb-sidenav-menu-heading"><span class="text-gray">Home</span></div>
                             <a class="nav-link" href="../index.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-home"></i></div>
-                                Home
+                                <div class="sb-nav-link-icon"><i class="fas fa-home text-gray"></i></div>
+                                <span class="text-gray">Home</span>
                             </a>
-                            <div class="sb-sidenav-menu-heading">Features</div>
-                            <a class="nav-link" href="/pages/app-game.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-gamepad"></i></div>
-                                App & Game Development
+                            <div class="sb-sidenav-menu-heading"><span class="text-gray">Features</span></div>
+                            <a class="nav-link" href="app-game.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-gamepad text-gray"></i></div>
+                                <span class="text-gray">App & Game Development</span>
                                 <!-- <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div> -->
                             </a>
                             <!-- <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
@@ -67,14 +69,14 @@
                                     <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
                                 </nav>
                             </div> -->
-                            <a class="nav-link" href="#">
-                                <div class="sb-nav-link-icon"><i class="fas fa-lines-leaning"></i></div>
-                                E-learning Solution
+                            <a class="nav-link collapsed" href="#">
+                                <div class="sb-nav-link-icon"><i class="fas fa-lines-leaning text-gray"></i></div>
+                                <span class="text-gray">E-learning Solution</span>
                                 <!-- <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div> -->
                             </a>
-                            <a class="nav-link" href="/pages/widgets-or-not.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-pencil"></i></div>
-                                Widgets & What-nots
+                            <a class="nav-link collapsed" href="widgets-or-not.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-pencil text-gray"></i></div>
+                                <span class="text-gray">Widgets & What-nots</span>
                                 <!-- <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div> -->
                             </a>
                             <!-- <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
@@ -103,10 +105,10 @@
                                     </div>
                                 </nav>
                             </div> -->
-                            <div class="sb-sidenav-menu-heading">Contact Us</div>
-                            <a class="nav-link" href="/pages/contact.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-address-book"></i></div>
-                                Form
+                            <div class="sb-sidenav-menu-heading"><span class="text-gray">Contact Us</span></div>
+                            <a class="nav-link" href="contact.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-address-book text-gray"></i></div>
+                                <span class="text-gray">Form</span>
                             </a>
                             <!-- <a class="nav-link" href="tables.html">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
@@ -115,8 +117,8 @@
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as:</div>
-                        Start Bootstrap
+                        <!-- <div class="small">Logged in as:</div>
+                        Start Bootstrap -->
                     </div>
                 </nav>
             </div>
@@ -145,10 +147,10 @@
                                         <h2 class="sub-title pt-3 text-uppercase">e-Learning/Serious Games</h2>
                                         <p class="paragraph">Serious (and sometimes not-so-serious) games, immersive interactions, engaging scenarios and more. When it comes to eLearning we&apos;ll bring you a truly awesome experience that will entertain and educate the pants off your audience.</p>
                                         <div><img id="logo-cogworks" class="mx-auto d-block" src="/assets/imgs/logo.svg"></div>
-                                        <p class="fs-4 text-center mx-auto d-block" style="max-width: 800px">A powerful online app for creating <b>responsive E Learning</b> and <b>responsive websites</b> using the <b>Bootstrap framework</b>.</p>
+                                        <p class="fs-4 text-center text-black mx-auto d-block" style="max-width: 800px">A powerful online app for creating <b>responsive E Learning</b> and <b>responsive websites</b> using the <b>Bootstrap framework</b>.</p>
                                         <div><img id="cogworks-interface" class="mx-auto d-block" src="/assets/imgs/e-learning solution/interface3.jpg"></div>
-                                        <p class="fs-3 text-center mt-5 mb-3 mx-auto d-block" style="max-width: 600px"><b>Cog Works</b> is a online application filled with powerful features.</p>
-                                        <p class="text-center mb-5 mx-auto d-block" style="max-width: 950px">Cog Works helps code developers, instructional developer, and designers of all skill levels create the eLearning, website, or app they want by providing flexible and editable tools. It supports a wide range of widgets (components) and Pods (pre-built sections) as well as advanced features that make you more productive. Developers and designers all around the world use it every day. We are sure you&apos;ll love it too!</p>
+                                        <p class="fs-3 text-center mt-5 mb-3 mx-auto d-block text-black" style="max-width: 600px"><b>Cog Works</b> is a online application filled with powerful features.</p>
+                                        <p class="text-center mb-5 mx-auto d-block text-black" style="max-width: 950px">Cog Works helps code developers, instructional developer, and designers of all skill levels create the eLearning, website, or app they want by providing flexible and editable tools. It supports a wide range of widgets (components) and Pods (pre-built sections) as well as advanced features that make you more productive. Developers and designers all around the world use it every day. We are sure you&apos;ll love it too!</p>
                                     <div id="addGameDev">
                                         <h3 class="tc-orange fs-3 text-center text-uppercase">Highlights</h3>
                                             <div class="container mt-5">
@@ -158,13 +160,13 @@
                                                     </div>
                                                     <div class="col-md-6 mt-5">
                                                         <h4 class="tc-orange">Simple and Intuitive Interface</h4>
-                                                        <p>Cog Works has an intuitive drag and drop interface, which is designed to make you more productive. It makes it really easy to build eLearning, websites, or apps in seconds without writing a single line of code.</p>
+                                                        <p class="text-black">Cog Works has an intuitive drag and drop interface, which is designed to make you more productive. It makes it really easy to build eLearning, websites, or apps in seconds without writing a single line of code.</p>
                                                     </div>
                                                 </div>
                                                 <div class="row mb-5">
                                                     <div class="col-md-6 mt-5 text-end">
                                                         <h4 class="tc-orange">Built for Bootstrap</h4>
-                                                        <p>Cog Works knows how to construct a valid Bootstrap page. We make site creation easy by providing you with vast customization options. Our tool can provide suggestions for code and components, and automatically write the needed HTML so that you get a beautiful and responsive layout. Without having to knowing a single line of code.</p>
+                                                        <p class="text-black">Cog Works knows how to construct a valid Bootstrap page. We make site creation easy by providing you with vast customization options. Our tool can provide suggestions for code and components, and automatically write the needed HTML so that you get a beautiful and responsive layout. Without having to knowing a single line of code.</p>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <img src="/assets/imgs/e-learning solution/2_bootstrap_integration.jpg" alt="" class="interface-min-width elearning-images">
@@ -176,13 +178,13 @@
                                                     </div>
                                                     <div class="col-md-6 mt-5">
                                                         <h4 class="tc-orange">Real Time Preview</h4>
-                                                        <p>Cog Works has a powerful feature called Preview. With it you can open your design in multiple web browsers and devices, and every change you make within the app will be viewable instantly.</p>
+                                                        <p class="text-black">Cog Works has a powerful feature called Preview. With it you can open your design in multiple web browsers and devices, and every change you make within the app will be viewable instantly.</p>
                                                     </div>
                                                 </div>
                                                 <div class="row mb-5">
                                                     <div class="col-md-6 mt-5 text-end">
                                                         <h4 class="tc-orange">Rich Library of Widgets and Pods</h4>
-                                                        <p>Everything from Bootstrap is supported, and you can even use basic elements like <b>div</b>, <b>span</b> and <b>section</b> to create any kind of design imaginable. Cog Works also has a large collection of Widgets and Pods shared by other users found on our online library.</p>
+                                                        <p class="text-black">Everything from Bootstrap is supported, and you can even use basic elements like <b>div</b>, <b>span</b> and <b>section</b> to create any kind of design imaginable. Cog Works also has a large collection of Widgets and Pods shared by other users found on our online library.</p>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <img src="/assets/imgs/e-learning solution/4_component_library.jpg" alt="" class="interface-min-width elearning-images">
@@ -194,13 +196,13 @@
                                                     </div>
                                                     <div class="col-md-6 mt-5">
                                                         <h4 class="tc-orange">Smart Reusable Widgets and Pods</h4>
-                                                        <p>You can turn frequently used pieces of your designs like headers, footers and navigation menus into user Widgets and Pods. They become available in your What-nots library and can be dropped into any design.</p>
+                                                        <p class="text-black">You can turn frequently used pieces of your designs like headers, footers and navigation menus into user Widgets and Pods. They become available in your What-nots library and can be dropped into any design.</p>
                                                     </div>
                                                 </div>
                                                 <div class="row mb-5">
                                                     <div class="col-md-6 mt-5 text-end">
                                                         <h4 class="tc-orange">Advanced CSS Editor</h4>
-                                                        <p>Sometimes you need to get your hands dirty and write CSS. Our advanced CSS editing interface supports auto suggest and rule validation, and shows the active and inherited rules at an any given time. You will soon dread having to go back to your text editor.</p>
+                                                        <p class="text-black">Sometimes you need to get your hands dirty and write CSS. Our advanced CSS editing interface supports auto suggest and rule validation, and shows the active and inherited rules at an any given time. You will soon dread having to go back to your text editor.</p>
                                                     </div>
                                                     <div class="col-md-6">
                                                         <img src="/assets/imgs/e-learning solution/6_css_editing.jpg" alt="" class="interface-min-width elearning-images">
@@ -212,19 +214,19 @@
                                                     </div>
                                                     <div class="col-md-6 mt-5">
                                                         <h4 class="tc-orange">Live JavaScript Editing</h4>
-                                                        <p>Write JavaScript in our Sublime Text-like editor. All your changes are synced with the preview, so you can write code and try it out without having to reload your browser.</p>
+                                                        <p class="text-black">Write JavaScript in our Sublime Text-like editor. All your changes are synced with the preview, so you can write code and try it out without having to reload your browser.</p>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col">
-                                                        <p class="fs-3 text-center mb-5 mx-auto d-block" style="max-width: 600px; margin-top: 100px"><b>Cog Works</b> produces beautiful HTML and CSS, indistinguishable from hand-written code.</p>
+                                                        <p class="fs-3 text-center mb-5 mx-auto d-block text-black" style="max-width: 600px; margin-top: 100px"><b>Cog Works</b> produces beautiful HTML and CSS, indistinguishable from hand-written code.</p>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-md-5 text-end">
-                                                        <p class="fs-4">Even more...</p>
+                                                        <p class="fs-4 text-black">Even more...</p>
                                                     </div>
-                                                    <div class="col-md-7">
+                                                    <div class="col-md-7 text-black">
                                                         <ul>
                                                             <li>Write JS and HTML in our Sublime Text-like editor.</li>
                                                             <li>Import CSS, JS and HTML files, and fonts from Google Fonts.</li>
@@ -260,7 +262,7 @@
                             </div>
                         </section>
                 </main>
-                <footer class="py-4 bg-light mt-auto">
+                <footer class="py-4 bg-light-gray mt-auto">
                     <div class="container-fluid px-4">
                         <div class="d-flex align-items-center justify-content-between small">
                             <div class="text-muted">Copyright &copy; ProjectCog LLC.</div>
@@ -274,7 +276,18 @@
                 </footer>
             </div>
         </div>
+        <script>
+            var icon =  document.getElementById("icon");
 
+            icon.onclick = function click(){
+                document.body.classList.toggle("dark-theme");
+                if(document.body.classList.contains("dark-theme")){
+                    icon.src = "/assets/imgs/icons/sun.png";
+                }else{
+                    icon.src = "/assets/imgs/icons/moon.png";
+                }
+            }
+        </script>
         <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="/assets/js/scripts.js"></script>
         <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script> -->
