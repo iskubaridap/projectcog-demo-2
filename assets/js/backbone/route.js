@@ -1,8 +1,9 @@
 var appRouter = Backbone.Router.extend({
     routes: {
         "": "homeRoute",
-        "about": "aboutRoute",
-        "features": "featuresRoute",
+        "app-game": "appGameRoute",
+        "e-learning": "eLearningRoute",
+        "widgets-whatnot": "widgetsWhatnotRoute",
         "contact": "contactRoute",
         "success": "successRoute",
         "fail": "failRoute"
@@ -10,11 +11,14 @@ var appRouter = Backbone.Router.extend({
     homeRoute: () => {
         new home();
     },
-    aboutRoute: () => {
-        new about();
+    appGameRoute: () => {
+        new appGame();
     },
-    featuresRoute: () => {
-        new features();
+    eLearningRoute: () => {
+        new eLearning();
+    },
+    widgetsWhatnotRoute: () => {
+        new widgetsWhatNot();
     },
     contactRoute: () => {
         new contact();

@@ -1,480 +1,334 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>App & Games Development</title>
-        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
-        <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/assets/css/main.css" rel="stylesheet" />
-        <link rel="icon" type="image/x-icon" href="/assets/imgs/favicon_logo.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    </head>
-    <style>
-        @import '/assets/css/demo-portfolio.css';
-        @import '/assets/css/responsiveslides.css';
-    </style>
-    <body class="sb-nav-fixed">
-        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-            <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="../index.html">Welcome</a>
-            <!-- Sidebar Toggle-->
-            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
-            <!-- Navbar Search-->
-            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-                <div class="input-group">
-                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+
+<style>
+    @import './assets/css/demo-portfolio.css';
+    @import './assets/css/responsiveslides.css';
+</style>
+<div class="container-fluid">
+    <div class="container-fluid main-content-wrap-padding pb-0">
+        <div class="row">
+            <div class="col-lg-1 col-md-1 main-content"></div>
+            <div class="col-lg-10 col-md-10 main-content">
+                <div id="title-wrap" class="d-flex justify-content-between align-items-end">
+                    <div class="title-item">
+                        <h1 class="title title-color text-uppercase" data-target="app-game-dev">App &amp; Game Development</h1>
+                    </div>
                 </div>
-            </form>
-            <!-- Navbar-->
-            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#!">Settings</a></li>
-                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="#!">Logout</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <div id="layoutSidenav">
-            <div id="layoutSidenav_nav">
-                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
-                    <div class="sb-sidenav-menu">
-                        <div class="nav">
-                            <div class="sb-sidenav-menu-heading">Home</div>
-                            <a class="nav-link" href="../index.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-home"></i></div>
-                                Home
-                            </a>
-                            <div class="sb-sidenav-menu-heading">Features</div>
-                            <a class="nav-link" href="#">
-                                <div class="sb-nav-link-icon"><i class="fas fa-gamepad"></i></div>
-                                App & Game Development
-                                <!-- <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div> -->
-                            </a>
-                            <!-- <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="./pages/layout-static.html">Static Navigation</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
-                                </nav>
-                            </div> -->
-                            <a class="nav-link" href="/pages/e-learning.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-lines-leaning"></i></div>
-                                E-learning Solution
-                                <!-- <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div> -->
-                            </a>
-                            <a class="nav-link" href="/pages/widgets-or-not.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-pencil"></i></div>
-                                Widgets & What-nots
-                                <!-- <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div> -->
-                            </a>
-                            <!-- <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
-                                        Authentication
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a>
-                                    <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                        <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="login.html">Login</a>
-                                            <a class="nav-link" href="register.html">Register</a>
-                                            <a class="nav-link" href="password.html">Forgot Password</a>
-                                        </nav>
-                                    </div>
-                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
-                                        Error
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a>
-                                    <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                        <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="401.html">401 Page</a>
-                                            <a class="nav-link" href="404.html">404 Page</a>
-                                            <a class="nav-link" href="500.html">500 Page</a>
-                                        </nav>
-                                    </div>
-                                </nav>
-                            </div> -->
-                            <div class="sb-sidenav-menu-heading">Contact Us</div>
-                            <a class="nav-link" href="/pages/contact.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-address-book"></i></div>
-                                Form
-                            </a>
-                            <!-- <a class="nav-link" href="tables.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Tables
-                            </a> -->
-                        </div>
-                    </div>
-                    <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as:</div>
-                        Start Bootstrap
-                    </div>
-                </nav>
-            </div>
-            <div id="layoutSidenav_content">
-                <main>
-                    <div class="container-fluid px-4">
-                        <div class="container-fluid main-content-wrap-padding pb-0">
-                            <div class="row">
-                                <div class="col-lg-1 col-md-1 main-content"></div>
-                                <div class="col-lg-10 col-md-10 main-content">
-                                    <div id="title-wrap" class="d-flex justify-content-between align-items-end">
-                                        <div class="title-item">
-                                            <h1 class="title title-color text-uppercase" data-target="app-game-dev">App &amp; Game Development</h1>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- app-game-dev -->
-                        <section class="sec-content mb-5" data-section="app-game-dev">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-lg-1 col-md-1 main-content"></div>
-                                    <div class="col-lg-10 col-md-10 main-content">
-                                        <h2 class="sub-title pt-3 text-uppercase">Introducing CogWorks</h2>
-                                        <p class="paragraph">Maybe you're looking for something from our own line of in-house developed products. Or maybe you need your own custom app developed. We can take you to the next level and give you the tools you need to succeed and look bodacious while you're at it.</p>
-                                        <ul id="filters" class="controls clearfix">
-                                            <li><span class="control addGameFilter active" data-filter="all">All</span></li>
-                                            <li><span class="control addGameFilter" data-filter=".addGameApp">Apps</span></li>
-                                            <li><span class="control addGameFilter" data-filter=".addGameGames">Games</span></li>
-                                            <li><span class="control addGameFilter" data-filter=".addGameTools">Tools</span></li>			
-                                            <li><span class="control addGameFilter" data-filter=".addElearning">E-Learning</span></li>			
-                                        </ul>
-                                        <!-- all -->
-                                        <div id="addGameDev">
-                                            <div class="portfolio mix addGameApp" data-cat="addElearning">
-                                                <div class="portfolio-wrapper dksort">
-                                                    <img class="portfolio-img" src="/assets/imgs/portfolios/elearning/aha.png" alt="" />                    
-                                                    <div class="label">
-                                                        <div class="label-text">
-                                                            <a class="text-title">HA CPR Game</a>
-                                                            <span class="text-category">Games/elearning</span>                            
-                                                        </div>
-                                                        <div id="aha-modal-wrap" class="thumbnailsInfo"></div>
-                                                        <div class="label-bg"></div>                        
-                                                    </div>                    
-                                                </div>
-                                                <div class="thumbnailsInfoViewer"></div>        
-                                            </div>
-                                            <div class="portfolio mix addGameGames" data-cat="addElearning">
-                                                <div class="portfolio-wrapper dksort">
-                                                    <img class="portfolio-img" src="/assets/imgs/portfolios/Games/angry-cow-thmb.png" alt="" />                    
-                                                    <div class="label">
-                                                        <div class="label-text">
-                                                            <a class="text-title">Angry Cow</a>
-                                                            <span class="text-category">Games/elearning</span>                            
-                                                        </div>
-                                    
-                                                        <div id="angry-cow-modal-wrap" class="thumbnailsInfo"></div>
-                                                        <div class="label-bg"></div>                        
-                                                    </div>                    
-                                                </div>
-                                                <div class="thumbnailsInfoViewer"></div>        
-                                            </div>
-                                    
-                                            <div class="portfolio mix addGameTools" data-cat="addGameTools">
-                                                <div class="portfolio-wrapper dksort">
-                                                    <img class="portfolio-img" src="/assets/imgs/portfolios/Apps/mcafee-dashboard.png" alt="" />                    
-                                                    <div class="label">
-                                                        <div class="label-text">
-                                                            <a class="text-title">ELearning Dashboard</a>
-                                                            <span class="text-category">Tools/Apps</span>                            
-                                                        </div>
-                                    
-                                                        <div id="mcafee-dashboard-modal-wrap" class="thumbnailsInfo"></div>
-                                                        <div class="label-bg"></div>                        
-                                                    </div>                    
-                                                </div>
-                                                <div class="thumbnailsInfoViewer"></div>        
-                                            </div>
-                                            <div class="portfolio mix addGameTools" data-cat="addGameTools">
-                                                <div class="portfolio-wrapper dksort">
-                                                    <img class="portfolio-img" src="/assets/imgs/portfolios/Tools/CogTranslate.png" alt="" />                    
-                                                    <div class="label">
-                                                        <div class="label-text">
-                                                            <a class="text-title">Translation Tool</a>
-                                                            <span class="text-category">Tools/Apps</span>                            
-                                                        </div>
-                                    
-                                                        <div id="translationTool-modal-wrap" class="thumbnailsInfo"></div>
-                                                        <div class="label-bg"></div>                        
-                                                    </div>                    
-                                                </div>
-                                                <div class="thumbnailsInfoViewer"></div>        
-                                            </div>	
-
-                                            <div class="portfolio mix addGameGames" data-cat="addGameGame">
-                                                <div class="portfolio-wrapper dksort">
-                                                    <img class="portfolio-img" src="/assets/imgs/portfolios/Games/explore.png" alt="" />
-                                                    <div class="label">
-                                                        <div class="label-text">
-                                                            <a class="text-title">Various </a>
-                                                            <span class="text-category">Games</span>
-                                                        </div>
-                                    
-                                                        <div id="various-games-modal-wrap" class="thumbnailsInfo"></div>
-                                                        <div class="label-bg"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="thumbnailsInfoViewer"></div>
-                                            </div>	
-
-                                            <div class="portfolio mix addGameApp addElearning" data-cat="addElearning">
-                                                <div class="portfolio-wrapper dksort">
-                                                    <img class="portfolio-img" src="/assets/imgs/portfolios/elearning/halo.png" alt="" />
-                                                    <div class="label">
-                                                        <div class="label-text">
-                                                            <a class="text-title">Halo Quest</a>
-                                                            <span class="text-category">APP/eLearning</span>
-                                                        </div>
-                                    
-                                                        <div id="visualInfography-modal-wrap" class="thumbnailsInfo"></div>
-                                                        <div class="label-bg"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="thumbnailsInfoViewer"></div>
-                                            </div>		
-                                    
-                                            <div class="portfolio mix addElearning" data-cat="addElearning">
-                                                <div class="portfolio-wrapper dksort">
-                                                    <img class="portfolio-img" src="/assets/imgs/portfolios/elearning/impResearch.png" alt="" />
-                                                    <div class="label">
-                                                        <div class="label-text">
-                                                            <a class="text-title">Measure Evaluation</a>
-                                                            <span class="text-category">eLearning</span>
-                                                        </div>
-                                    
-                                                        <div id="measure-evaluation-modal-wrap" class="thumbnailsInfo"></div>  
-                                                        <div class="label-bg"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="thumbnailsInfoViewer"></div>
-                                            </div>
-                                            
-                                            <div class="portfolio mix addGameGames" data-cat="addGameGame">
-                                                <div class="portfolio-wrapper dksort">
-                                                    <img class="portfolio-img" src="/assets/imgs/portfolios/Games/matching.png" alt="" />
-                                                    <div class="label">
-                                                        <div class="label-text">
-                                                            <a class="text-title">Memory &amp; Matching</a>
-                                                            <span class="text-category">eLearning/Game</span>
-                                                        </div>
-                                    
-                                                        <div id="memory-games-modal-wrap" class="thumbnailsInfo"></div>
-                                                        <div class="label-bg"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="thumbnailsInfoViewer"></div>
-                                            </div>
-
-                                            <div class="portfolio mix addElearning" data-cat="addGameGame">
-                                                <div class="portfolio-wrapper dksort">
-                                                    <img class="portfolio-img" src="/assets/imgs/portfolios/elearning/drag-drop.png" alt="" />
-                                                    <div class="label">
-                                                        <div class="label-text">
-                                                            <a class="text-title">Drag &amp; Drop</a>
-                                                            <span class="text-category">E-Learning</span>
-                                                        </div>
-                                    
-                                                        <div id="drop-drag-modal-wrap" class="thumbnailsInfo"></div>
-                                                        <div class="label-bg"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="thumbnailsInfoViewer"></div>
-                                            </div>
-                                            
-                                            <div class="portfolio mix addElearning" data-cat="addGameGame">
-                                                <div class="portfolio-wrapper dksort">
-                                                    <img class="portfolio-img" src="/assets/imgs/portfolios/elearning/conversational_elearning.png" alt="" />
-                                                    <div class="label">
-                                                        <div class="label-text">
-                                                            <a class="text-title">Conversational Training</a>
-                                                            <span class="text-category">E-Learning</span>
-                                                        </div>
-                                    
-                                                        <div id="conversational-modal-wrap" class="thumbnailsInfo"></div>
-                                                        <div class="label-bg"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="thumbnailsInfoViewer"></div>
-                                            </div>
-                                            
-                                            <div class="portfolio mix addElearning" data-cat="addGameGame">
-                                                <div class="portfolio-wrapper dksort">
-                                                    <img class="portfolio-img" src="/assets/imgs/portfolios/elearning/flash_cards-E-learning.png" alt="" />
-                                                    <div class="label">
-                                                        <div class="label-text">
-                                                            <a class="text-title">Flash Cards</a>
-                                                            <span class="text-category">E-Learning</span>
-                                                        </div>
-                                    
-                                                        <div id="flash-cards-modal-wrap" class="thumbnailsInfo"></div>
-                                                        <div class="label-bg"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="thumbnailsInfoViewer"></div>
-                                            </div>
-
-                                            <div class="portfolio mix addElearning" data-cat="addGameGame">
-                                                <div class="portfolio-wrapper dksort">
-                                                    <img class="portfolio-img" src="/assets/imgs/portfolios/elearning/scenario-activities-e-learning.png" alt="" />
-                                                    <div class="label">
-                                                        <div class="label-text">
-                                                            <a class="text-title">Scenario Activities</a>
-                                                            <span class="text-category">E-Learning</span>
-                                                        </div>
-                                    
-                                                        <div id="scenario-modal-wrap" class="thumbnailsInfo"></div>
-                                                        <div class="label-bg"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="thumbnailsInfoViewer"></div>
-                                            </div>
-
-                                            <div class="portfolio mix addElearning addGameApp" data-cat="addGameGame">
-                                                <div class="portfolio-wrapper dksort">
-                                                    <img class="portfolio-img" src="/assets/imgs/portfolios/elearning/on-demand-training-and-activities.png" alt="" />
-                                                    <div class="label">
-                                                        <div class="label-text">
-                                                            <a class="text-title">On-Demand Training &amp; Activities</a>
-                                                            <span class="text-category">E-Learning/Apps</span>
-                                                        </div>
-                                    
-                                                        <div id="on-demand-modal-wrap" class="thumbnailsInfo"></div>
-                                                        <div class="label-bg"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="thumbnailsInfoViewer"></div>
-                                            </div>
-
-                                            <div class="portfolio mix addGameTools" data-cat="addGameGame">
-                                                <div class="portfolio-wrapper dksort">
-                                                    <img class="portfolio-img" src="/assets/imgs/portfolios/elearning/leaderboardtools.png" alt="" />
-                                                    <div class="label">
-                                                        <div class="label-text">
-                                                            <a class="text-title">Leaderboard</a>
-                                                            <span class="text-category">Tools</span>
-                                                        </div>
-                                    
-                                                        <div id="leaderboard-modal-wrap" class="thumbnailsInfo"></div>
-                                                        <div class="label-bg"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="thumbnailsInfoViewer"></div>
-                                            </div>
-
-                                            <div class="portfolio mix addGameTools" data-cat="addGameGame">
-                                                <div class="portfolio-wrapper dksort">
-                                                    <img class="portfolio-img" src="/assets/imgs/portfolios/elearning/translator-tools.png" alt="" />
-                                                    <div class="label">
-                                                        <div class="label-text">
-                                                            <a class="text-title">Translator</a>
-                                                            <span class="text-category">Tools</span>
-                                                        </div>
-                                    
-                                                        <div id="translator-modal-wrap" class="thumbnailsInfo"></div>
-                                                        <div class="label-bg"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="thumbnailsInfoViewer"></div>
-                                            </div>
-
-                                            <div class="portfolio mix addElearning" data-cat="addGameGame">
-                                                <div class="portfolio-wrapper dksort">
-                                                    <img class="portfolio-img" src="/assets/imgs/portfolios/elearning/halo-quest.jpg" alt="" />
-                                                    <div class="label">
-                                                        <div class="label-text">
-                                                            <a class="text-title">Halo Quest</a>
-                                                            <span class="text-category">E-learning</span>
-                                                        </div>
-                                    
-                                                        <div id="halo-quest-modal-wrap" class="thumbnailsInfo"></div>
-                                                        <div class="label-bg"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="thumbnailsInfoViewer"></div>
-                                            </div>
-
-                                            <div class="portfolio mix addGameGames" data-cat="addGameGame">
-                                                <div class="portfolio-wrapper dksort">
-                                                    <img class="portfolio-img" src="/assets/imgs/portfolios/elearning/space-invaders.jpg" alt="" />
-                                                    <div class="label">
-                                                        <div class="label-text">
-                                                            <a class="text-title">Space Invaders</a>
-                                                            <span class="text-category">Games</span>
-                                                        </div>
-                                    
-                                                        <div id="space-invaders-modal-wrap" class="thumbnailsInfo"></div>
-                                                        <div class="label-bg"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="thumbnailsInfoViewer"></div>
-                                            </div>
-
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <section id="thumbnailsInfoWrapper">
-                            <div class="aTable">
-                                <div class="aTR">
-                                    <div class="aTD">
-                                        <div class="container-fluid">
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                    <div id="thumbnailsInfoViewer"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                </main>
-                <footer class="py-4 bg-light mt-auto">
-                    <div class="container-fluid px-4">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; ProjectCog LLC.</div>
-                            <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
             </div>
         </div>
+    </div>
+    <!-- app-game-dev -->
+    <section class="sec-content mb-5" data-section="app-game-dev">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-1 col-md-1 main-content"></div>
+                <div class="col-lg-10 col-md-10 main-content">
+                    <h2 class="sub-title pt-3 text-uppercase">Introducing CogWorks</h2>
+                    <p class="paragraph">Maybe you're looking for something from our own line of in-house developed products. Or maybe you need your own custom app developed. We can take you to the next level and give you the tools you need to succeed and look bodacious while you're at it.</p>
+                    <ul id="filters" class="controls clearfix">
+                        <li><span class="control addGameFilter active" data-filter="all">All</span></li>
+                        <li><span class="control addGameFilter" data-filter=".addGameApp">Apps</span></li>
+                        <li><span class="control addGameFilter" data-filter=".addGameGames">Games</span></li>
+                        <li><span class="control addGameFilter" data-filter=".addGameTools">Tools</span></li>			
+                        <li><span class="control addGameFilter" data-filter=".addElearning">E-Learning</span></li>			
+                    </ul>
+                    <!-- all -->
+                    <div id="addGameDev">
+                        <div class="portfolio mix addGameApp" data-cat="addElearning">
+                            <div class="portfolio-wrapper dksort">
+                                <img class="portfolio-img" src="./assets/imgs/portfolios/elearning/aha.png" alt="" />                    
+                                <div class="label">
+                                    <div class="label-text">
+                                        <a class="text-title">HA CPR Game</a>
+                                        <span class="text-category">Games/elearning</span>                            
+                                    </div>
+                                    <div id="aha-modal-wrap" class="thumbnailsInfo"></div>
+                                    <div class="label-bg"></div>                        
+                                </div>                    
+                            </div>
+                            <div class="thumbnailsInfoViewer"></div>        
+                        </div>
+                        <div class="portfolio mix addGameGames" data-cat="addElearning">
+                            <div class="portfolio-wrapper dksort">
+                                <img class="portfolio-img" src="./assets/imgs/portfolios/Games/angry-cow-thmb.png" alt="" />                    
+                                <div class="label">
+                                    <div class="label-text">
+                                        <a class="text-title">Angry Cow</a>
+                                        <span class="text-category">Games/elearning</span>                            
+                                    </div>
+                
+                                    <div id="angry-cow-modal-wrap" class="thumbnailsInfo"></div>
+                                    <div class="label-bg"></div>                        
+                                </div>                    
+                            </div>
+                            <div class="thumbnailsInfoViewer"></div>        
+                        </div>
+                
+                        <div class="portfolio mix addGameTools" data-cat="addGameTools">
+                            <div class="portfolio-wrapper dksort">
+                                <img class="portfolio-img" src="./assets/imgs/portfolios/Apps/mcafee-dashboard.png" alt="" />                    
+                                <div class="label">
+                                    <div class="label-text">
+                                        <a class="text-title">ELearning Dashboard</a>
+                                        <span class="text-category">Tools/Apps</span>                            
+                                    </div>
+                
+                                    <div id="mcafee-dashboard-modal-wrap" class="thumbnailsInfo"></div>
+                                    <div class="label-bg"></div>                        
+                                </div>                    
+                            </div>
+                            <div class="thumbnailsInfoViewer"></div>        
+                        </div>
+                        <div class="portfolio mix addGameTools" data-cat="addGameTools">
+                            <div class="portfolio-wrapper dksort">
+                                <img class="portfolio-img" src="./assets/imgs/portfolios/Tools/CogTranslate.png" alt="" />                    
+                                <div class="label">
+                                    <div class="label-text">
+                                        <a class="text-title">Translation Tool</a>
+                                        <span class="text-category">Tools/Apps</span>                            
+                                    </div>
+                
+                                    <div id="translationTool-modal-wrap" class="thumbnailsInfo"></div>
+                                    <div class="label-bg"></div>                        
+                                </div>                    
+                            </div>
+                            <div class="thumbnailsInfoViewer"></div>        
+                        </div>	
 
-        <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="/assets/js/scripts.js"></script>
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script> -->
-        <!-- <script src="/assets/demo/chart-area-demo.js"></script>
-        <script src="/assets/demo/chart-bar-demo.js"></script> -->
-        <!-- <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script> -->
-        <!-- <script src="/assets/js/datatables-simple-demo.js"></script> -->
+                        <div class="portfolio mix addGameGames" data-cat="addGameGame">
+                            <div class="portfolio-wrapper dksort">
+                                <img class="portfolio-img" src="./assets/imgs/portfolios/Games/explore.png" alt="" />
+                                <div class="label">
+                                    <div class="label-text">
+                                        <a class="text-title">Various </a>
+                                        <span class="text-category">Games</span>
+                                    </div>
+                
+                                    <div id="various-games-modal-wrap" class="thumbnailsInfo"></div>
+                                    <div class="label-bg"></div>
+                                </div>
+                            </div>
+                            <div class="thumbnailsInfoViewer"></div>
+                        </div>	
 
-        <script src="/assets/js/jquery-3.x-git.min.js"></script>
-        <script src="/assets/js/mixitup.min.js"></script>
-        <script src="/assets/js/responsiveslides.js"></script>
-        <script src="/assets/js/demo-portfolio.js"></script>
-        <script src="/assets/js/magic-scroll.js"></script>
-        <script src="/assets/js/plugins/image-map-pro.js"></script>
-        <script src="/assets/js/page-product.js"></script>
-        <script src="/assets/js/page-image-map-pro-jquery.js"></script>
-        
-    </body>
-</html>
+                        <div class="portfolio mix addGameApp addElearning" data-cat="addElearning">
+                            <div class="portfolio-wrapper dksort">
+                                <img class="portfolio-img" src="./assets/imgs/portfolios/elearning/halo.png" alt="" />
+                                <div class="label">
+                                    <div class="label-text">
+                                        <a class="text-title">Halo Quest</a>
+                                        <span class="text-category">APP/eLearning</span>
+                                    </div>
+                
+                                    <div id="visualInfography-modal-wrap" class="thumbnailsInfo"></div>
+                                    <div class="label-bg"></div>
+                                </div>
+                            </div>
+                            <div class="thumbnailsInfoViewer"></div>
+                        </div>		
+                
+                        <div class="portfolio mix addElearning" data-cat="addElearning">
+                            <div class="portfolio-wrapper dksort">
+                                <img class="portfolio-img" src="./assets/imgs/portfolios/elearning/impResearch.png" alt="" />
+                                <div class="label">
+                                    <div class="label-text">
+                                        <a class="text-title">Measure Evaluation</a>
+                                        <span class="text-category">eLearning</span>
+                                    </div>
+                
+                                    <div id="measure-evaluation-modal-wrap" class="thumbnailsInfo"></div>  
+                                    <div class="label-bg"></div>
+                                </div>
+                            </div>
+                            <div class="thumbnailsInfoViewer"></div>
+                        </div>
+                        
+                        <div class="portfolio mix addGameGames" data-cat="addGameGame">
+                            <div class="portfolio-wrapper dksort">
+                                <img class="portfolio-img" src="./assets/imgs/portfolios/Games/matching.png" alt="" />
+                                <div class="label">
+                                    <div class="label-text">
+                                        <a class="text-title">Memory &amp; Matching</a>
+                                        <span class="text-category">eLearning/Game</span>
+                                    </div>
+                
+                                    <div id="memory-games-modal-wrap" class="thumbnailsInfo"></div>
+                                    <div class="label-bg"></div>
+                                </div>
+                            </div>
+                            <div class="thumbnailsInfoViewer"></div>
+                        </div>
+
+                        <div class="portfolio mix addElearning" data-cat="addGameGame">
+                            <div class="portfolio-wrapper dksort">
+                                <img class="portfolio-img" src="./assets/imgs/portfolios/elearning/drag-drop.png" alt="" />
+                                <div class="label">
+                                    <div class="label-text">
+                                        <a class="text-title">Drag &amp; Drop</a>
+                                        <span class="text-category">E-Learning</span>
+                                    </div>
+                
+                                    <div id="drop-drag-modal-wrap" class="thumbnailsInfo"></div>
+                                    <div class="label-bg"></div>
+                                </div>
+                            </div>
+                            <div class="thumbnailsInfoViewer"></div>
+                        </div>
+                        
+                        <div class="portfolio mix addElearning" data-cat="addGameGame">
+                            <div class="portfolio-wrapper dksort">
+                                <img class="portfolio-img" src="./assets/imgs/portfolios/elearning/conversational_elearning.png" alt="" />
+                                <div class="label">
+                                    <div class="label-text">
+                                        <a class="text-title">Conversational Training</a>
+                                        <span class="text-category">E-Learning</span>
+                                    </div>
+                
+                                    <div id="conversational-modal-wrap" class="thumbnailsInfo"></div>
+                                    <div class="label-bg"></div>
+                                </div>
+                            </div>
+                            <div class="thumbnailsInfoViewer"></div>
+                        </div>
+                        
+                        <div class="portfolio mix addElearning" data-cat="addGameGame">
+                            <div class="portfolio-wrapper dksort">
+                                <img class="portfolio-img" src="./assets/imgs/portfolios/elearning/flash_cards-E-learning.png" alt="" />
+                                <div class="label">
+                                    <div class="label-text">
+                                        <a class="text-title">Flash Cards</a>
+                                        <span class="text-category">E-Learning</span>
+                                    </div>
+                
+                                    <div id="flash-cards-modal-wrap" class="thumbnailsInfo"></div>
+                                    <div class="label-bg"></div>
+                                </div>
+                            </div>
+                            <div class="thumbnailsInfoViewer"></div>
+                        </div>
+
+                        <div class="portfolio mix addElearning" data-cat="addGameGame">
+                            <div class="portfolio-wrapper dksort">
+                                <img class="portfolio-img" src="./assets/imgs/portfolios/elearning/scenario-activities-e-learning.png" alt="" />
+                                <div class="label">
+                                    <div class="label-text">
+                                        <a class="text-title">Scenario Activities</a>
+                                        <span class="text-category">E-Learning</span>
+                                    </div>
+                
+                                    <div id="scenario-modal-wrap" class="thumbnailsInfo"></div>
+                                    <div class="label-bg"></div>
+                                </div>
+                            </div>
+                            <div class="thumbnailsInfoViewer"></div>
+                        </div>
+
+                        <div class="portfolio mix addElearning addGameApp" data-cat="addGameGame">
+                            <div class="portfolio-wrapper dksort">
+                                <img class="portfolio-img" src="./assets/imgs/portfolios/elearning/on-demand-training-and-activities.png" alt="" />
+                                <div class="label">
+                                    <div class="label-text">
+                                        <a class="text-title">On-Demand Training &amp; Activities</a>
+                                        <span class="text-category">E-Learning/Apps</span>
+                                    </div>
+                
+                                    <div id="on-demand-modal-wrap" class="thumbnailsInfo"></div>
+                                    <div class="label-bg"></div>
+                                </div>
+                            </div>
+                            <div class="thumbnailsInfoViewer"></div>
+                        </div>
+
+                        <div class="portfolio mix addGameTools" data-cat="addGameGame">
+                            <div class="portfolio-wrapper dksort">
+                                <img class="portfolio-img" src="./assets/imgs/portfolios/elearning/leaderboardtools.png" alt="" />
+                                <div class="label">
+                                    <div class="label-text">
+                                        <a class="text-title">Leaderboard</a>
+                                        <span class="text-category">Tools</span>
+                                    </div>
+                
+                                    <div id="leaderboard-modal-wrap" class="thumbnailsInfo"></div>
+                                    <div class="label-bg"></div>
+                                </div>
+                            </div>
+                            <div class="thumbnailsInfoViewer"></div>
+                        </div>
+
+                        <div class="portfolio mix addGameTools" data-cat="addGameGame">
+                            <div class="portfolio-wrapper dksort">
+                                <img class="portfolio-img" src="./assets/imgs/portfolios/elearning/translator-tools.png" alt="" />
+                                <div class="label">
+                                    <div class="label-text">
+                                        <a class="text-title">Translator</a>
+                                        <span class="text-category">Tools</span>
+                                    </div>
+                
+                                    <div id="translator-modal-wrap" class="thumbnailsInfo"></div>
+                                    <div class="label-bg"></div>
+                                </div>
+                            </div>
+                            <div class="thumbnailsInfoViewer"></div>
+                        </div>
+
+                        <div class="portfolio mix addElearning" data-cat="addGameGame">
+                            <div class="portfolio-wrapper dksort">
+                                <img class="portfolio-img" src="./assets/imgs/portfolios/elearning/halo-quest.jpg" alt="" />
+                                <div class="label">
+                                    <div class="label-text">
+                                        <a class="text-title">Halo Quest</a>
+                                        <span class="text-category">E-learning</span>
+                                    </div>
+                
+                                    <div id="halo-quest-modal-wrap" class="thumbnailsInfo"></div>
+                                    <div class="label-bg"></div>
+                                </div>
+                            </div>
+                            <div class="thumbnailsInfoViewer"></div>
+                        </div>
+
+                        <div class="portfolio mix addGameGames" data-cat="addGameGame">
+                            <div class="portfolio-wrapper dksort">
+                                <img class="portfolio-img" src="./assets/imgs/portfolios/elearning/space-invaders.jpg" alt="" />
+                                <div class="label">
+                                    <div class="label-text">
+                                        <a class="text-title">Space Invaders</a>
+                                        <span class="text-category">Games</span>
+                                    </div>
+                
+                                    <div id="space-invaders-modal-wrap" class="thumbnailsInfo"></div>
+                                    <div class="label-bg"></div>
+                                </div>
+                            </div>
+                            <div class="thumbnailsInfoViewer"></div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="thumbnailsInfoWrapper">
+        <div class="aTable">
+            <div class="aTR">
+                <div class="aTD">
+                    <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                                <div id="thumbnailsInfoViewer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="./assets/js/mixitup.min.js"></script>
+<script src="./assets/js/responsiveslides.js"></script>
+<script src="./assets/js/demo-portfolio.js"></script>
+<script src="./assets/js/magic-scroll.js"></script>
+<script src="./assets/js/plugins/image-map-pro.js"></script>
+<script src="./assets/js/page-product.js"></script>
+<script src="./assets/js/page-image-map-pro-jquery.js"></script>

@@ -27,7 +27,7 @@ var home =  Backbone.View.extend({
                 const template = _.template(data, {});
                 _this.$el.html(template)
                 document.title = "Home";
-                setMainNavActive('home');
+                // setMainNavActive('home');
             }, 'html')
         }
 });
@@ -46,7 +46,7 @@ var about =  Backbone.View.extend({
             }, 'html')
         }
 });
-var features =  Backbone.View.extend({
+var appGame =  Backbone.View.extend({
     el: $('#main-content'),
         initialize: function(){
             this.render();
@@ -76,7 +76,7 @@ var features =  Backbone.View.extend({
                     variousGames, visualInfography, measureEvaluation,
                     memoryGames, dropDrag, conversational, flashCards,
                     scenario, onDemand, leaderboard, translator, haloQuest, spaceInvaders]).then((result) => {
-                    $.get( `./pages/features.html`, function (data) {
+                    $.get( `./pages/app-game.html`, function (data) {
                         const template = _.template(data, {});
                         const pageContent = _this.$el.html(template);
                         
@@ -97,12 +97,42 @@ var features =  Backbone.View.extend({
                         $(pageContent).find(`#translator-modal-wrap`).append(translator);
                         $(pageContent).find(`#halo-quest-modal-wrap`).append(haloQuest);
                         $(pageContent).find(`#space-invaders-modal-wrap`).append(spaceInvaders);
-                        document.title = "Features";
-                        setMainNavActive('features');
+                        document.title = "App & Game Development";
+                        // setMainNavActive('features');
                     }, 'html')
                 });
             };
             processRequest();
+        }
+});
+var eLearning =  Backbone.View.extend({
+    el: $('#main-content'),
+        initialize: function(){
+            this.render();
+        },
+        render: function(){
+            const _this = this;
+            $.get( `./pages/e-learning.html`, function (data) {
+                const template = _.template(data, {});
+                _this.$el.html(template);
+                document.title = "E-Learning Solution";
+                // setMainNavActive('contact');
+            }, 'html')
+        }
+});
+var widgetsWhatNot =  Backbone.View.extend({
+    el: $('#main-content'),
+        initialize: function(){
+            this.render();
+        },
+        render: function(){
+            const _this = this;
+            $.get( `./pages/widgets-or-not.html`, function (data) {
+                const template = _.template(data, {});
+                _this.$el.html(template);
+                document.title = "Widgets & Whats-nots";
+                // setMainNavActive('contact');
+            }, 'html')
         }
 });
 var contact =  Backbone.View.extend({
@@ -116,7 +146,7 @@ var contact =  Backbone.View.extend({
                 const template = _.template(data, {});
                 _this.$el.html(template);
                 document.title = "Contact Us";
-                setMainNavActive('contact');
+                // setMainNavActive('contact');
             }, 'html')
         }
 });
@@ -131,7 +161,7 @@ var success =  Backbone.View.extend({
                 const template = _.template(data, {});
                 _this.$el.html(template);
                 document.title = "Success";
-                setMainNavActive('contact');
+                // setMainNavActive('contact');
             }, 'html')
         }
 });
@@ -146,7 +176,7 @@ var fail =  Backbone.View.extend({
                 const template = _.template(data, {});
                 _this.$el.html(template);
                 document.title = "fail";
-                setMainNavActive('contact');
+                // setMainNavActive('contact');
             }, 'html')
         }
 });

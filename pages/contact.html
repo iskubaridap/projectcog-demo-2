@@ -1,191 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Contact Us</title>
-        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
-        <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="/assets/css/main.css" rel="stylesheet" />
-        <link rel="icon" type="image/x-icon" href="/assets/imgs/favicon_logo.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    </head>
-    <style>
-        @import '/assets/css/contact-us.css';
-    </style>
-    <body class="sb-nav-fixed">
-        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-            <!-- Navbar Brand-->
-            <a class="navbar-brand ps-3" href="../index.html">Welcome</a>
-            <!-- Sidebar Toggle-->
-            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
-            <!-- Navbar Search-->
-            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-                <div class="input-group">
-                    <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-                    <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
-                </div>
-            </form>
-            <!-- Navbar-->
-            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#!">Settings</a></li>
-                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="#!">Logout</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <div id="layoutSidenav">
-            <div id="layoutSidenav_nav">
-                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
-                    <div class="sb-sidenav-menu">
-                        <div class="nav">
-                            <div class="sb-sidenav-menu-heading">Home</div>
-                            <a class="nav-link" href="../index.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-home"></i></div>
-                                Home
-                            </a>
-                            <div class="sb-sidenav-menu-heading">Features</div>
-                            <a class="nav-link" href="/pages/app-game.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-gamepad"></i></div>
-                                App & Game Development
-                                <!-- <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div> -->
-                            </a>
-                            <!-- <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav">
-                                    <a class="nav-link" href="./pages/layout-static.html">Static Navigation</a>
-                                    <a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a>
-                                </nav>
-                            </div> -->
-                            <a class="nav-link" href="/pages/e-learning.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-lines-leaning"></i></div>
-                                E-learning Solution
-                                <!-- <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div> -->
-                            </a>
-                            <a class="nav-link" href="/pages/widgets-or-not.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-pencil"></i></div>
-                                Widgets & What-nots
-                                <!-- <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div> -->
-                            </a>
-                            <!-- <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
-                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
-                                        Authentication
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a>
-                                    <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                        <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="login.html">Login</a>
-                                            <a class="nav-link" href="register.html">Register</a>
-                                            <a class="nav-link" href="password.html">Forgot Password</a>
-                                        </nav>
-                                    </div>
-                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
-                                        Error
-                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                    </a>
-                                    <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                        <nav class="sb-sidenav-menu-nested nav">
-                                            <a class="nav-link" href="401.html">401 Page</a>
-                                            <a class="nav-link" href="404.html">404 Page</a>
-                                            <a class="nav-link" href="500.html">500 Page</a>
-                                        </nav>
-                                    </div>
-                                </nav>
-                            </div> -->
-                            <div class="sb-sidenav-menu-heading">Contact Us</div>
-                            <a class="nav-link" href="#">
-                                <div class="sb-nav-link-icon"><i class="fas fa-address-book"></i></div>
-                                Form
-                            </a>
-                            <!-- <a class="nav-link" href="tables.html">
-                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                                Tables
-                            </a> -->
+
+<style>
+    @import './assets/css/contact-us.css';
+</style>
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-md-8 contact-form-area pt-5 pb-5">
+            <h1 >CONTACT US WITH ANY QUESTIONS</h1>
+                <form id="contact" method="post">
+                    <div class="form-row">
+                    <h3>Quick Contact</h3>
+                    <h4>Contact us today, and get reply with in 24 hours!</h4>
+                        <div class="mb-3">
+                            <div id="name-group" class="form-group"><input type="text" name="name" placeholder="Your Name *" ><small class="form-text text-danger flex-grow-1 help-block lead"></small></div><br>
+                            <div id="email-group" class="form-group"><input type="email" name="email" placeholder="Your Email *" ><small class="form-text text-danger help-block lead"></small></div><br>
+                            <div id="phone-group" class="form-group"><input type="tel" name="phone" placeholder="Your Phone *" ><small class="form-text text-danger help-block lead"></small></div><br>
+                            <div id="subjectline-group" class="form-group"><input placeholder="Type your subject line" type="text" name="subjectline" tabindex="4"><small class="form-text text-danger help-block lead"></small></div>
+                        </div>
+                        <div class="mb-3">
+                            <div id="messagebody-group" class="form-group"><textarea name="messagebody" placeholder="Your Message *" style="height: 146px;"></textarea><small class="form-text text-danger help-block lead"></small></div>
+                        </div>
+                            <div class="mb-3">
+                            <div id="success">
+                        </div>
+                        <!-- <button class="btn text-uppercase" type="submit" name="submit" id="contact-submit" data-submit="...Sending">Send Message</button></div> -->
+                        <button type="submit" class="btn btn-success text-uppercase">Send Message</button></div>
+                        <div>
+                            <!-- <p class="success"> <?php echo $success;  ?></p>
+                            <p class="failed"> <?php echo $failed;  ?></p> -->
                         </div>
                     </div>
-                    <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as:</div>
-                        Start Bootstrap
-                    </div>
-                </nav>
-            </div>
-            <div id="layoutSidenav_content">
-                <main>
-                    <div class="container-fluid px-4">
-                        <div class="row justify-content-center">
-                            <div class="col-md-8 contact-form-area pt-5 pb-5">
-                                <h1 >CONTACT US WITH ANY QUESTIONS</h1>
-                              
-                                  <form id="contact" method="post">
-                                        <div class="form-row">
-                                        <h3>Quick Contact</h3>
-                                        <h4>Contact us today, and get reply with in 24 hours!</h4>
-                                            <div class="mb-3">
-                                                <div id="name-group" class="form-group"><input type="text" name="name" placeholder="Your Name *" ><small class="form-text text-danger flex-grow-1 help-block lead"></small></div><br>
-                                                <div id="email-group" class="form-group"><input type="email" name="email" placeholder="Your Email *" ><small class="form-text text-danger help-block lead"></small></div><br>
-                                                <div id="phone-group" class="form-group"><input type="tel" name="phone" placeholder="Your Phone *" ><small class="form-text text-danger help-block lead"></small></div><br>
-                                                <div id="subjectline-group" class="form-group"><input placeholder="Type your subject line" type="text" name="subjectline" tabindex="4"><small class="form-text text-danger help-block lead"></small></div>
-                                            </div>
-                                            <div class="mb-3">
-                                                <div id="messagebody-group" class="form-group"><textarea name="messagebody" placeholder="Your Message *" style="height: 146px;"></textarea><small class="form-text text-danger help-block lead"></small></div>
-                                            </div>
-                                                <div class="mb-3">
-                                                <div id="success">
-                                            </div>
-                                            <!-- <button class="btn text-uppercase" type="submit" name="submit" id="contact-submit" data-submit="...Sending">Send Message</button></div> -->
-                                            <button type="submit" class="btn btn-success text-uppercase">Send Message</button></div>
-                                            <div>
-                                                <!-- <p class="success"> <?php echo $success;  ?></p>
-                                                <p class="failed"> <?php echo $failed;  ?></p> -->
-                                            </div>
-                                        </div>
-                                    </form>  
-                            </div>
-                        </div>
-                    </div>
-                </main>
-                <footer class="py-4 bg-light mt-auto">
-                    <div class="container-fluid px-4">
-                        <div class="d-flex align-items-center justify-content-between small">
-                            <div class="text-muted">Copyright &copy; ProjectCog LLC.</div>
-                            <div>
-                                <a href="#">Privacy Policy</a>
-                                &middot;
-                                <a href="#">Terms &amp; Conditions</a>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-            </div>
+                </form>  
         </div>
-
-        <script src="/assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="/assets/js/scripts.js"></script>
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script> -->
-        <!-- <script src="/assets/demo/chart-area-demo.js"></script>
-        <script src="/assets/demo/chart-bar-demo.js"></script> -->
-        <!-- <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script> -->
-        <!-- <script src="/assets/js/datatables-simple-demo.js"></script> -->
-
-        <script src="/assets/js/jquery-3.x-git.min.js"></script>
-        <script src="/assets/js/mixitup.min.js"></script>
-        <script src="/assets/js/responsiveslides.js"></script>
-        <script src="/assets/js/demo-portfolio.js"></script>
-        <script src="/assets/js/magic-scroll.js"></script>
-        <script src="/assets/js/plugins/image-map-pro.js"></script>
-        <script src="/assets/js/page-product.js"></script>
-        <script src="/assets/js/page-image-map-pro-jquery.js"></script>
-        <script src="/assets/js/form.js"></script>
-        
-    </body>
-</html>
+    </div>
+</div>
