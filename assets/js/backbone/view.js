@@ -16,24 +16,38 @@ const setModalSection = (appsDevModal) => {
         }, 'html')
     });
 };
+const showLoading = () => {
+    $('#main-content').removeClass('active');
+    $('#page-loader').removeClass('inactive');
+};
+const hideLoading = () => {
+    $('#main-content').addClass('active');
+    $('#page-loader').addClass('inactive');
+};
 var home =  Backbone.View.extend({
     el: $('#main-content'),
-        initialize: function(){
-            this.render();
-        },
-        render: function(){
-            const _this = this;
-            $.get( `./pages/home.html`, function (data) {
-                const template = _.template(data, {});
-                _this.$el.html(template)
-                document.title = "Home";
-                // setMainNavActive('home');
-            }, 'html')
-        }
+    initialize: function(){
+        showLoading();
+        this.render();
+    },
+    render: function(){
+        const _this = this;
+        $.get( `./pages/home.html`, function (data) {
+            const template = _.template(data, {});
+            _this.$el.html(template);
+            document.title = "Home";
+            hideLoading();
+            /* _this.$el.ready(() => {
+                console.log('foobar');
+            }); */
+            // setMainNavActive('home');
+        }, 'html');
+    }
 });
 var about =  Backbone.View.extend({
     el: $('#main-content'),
         initialize: function(){
+            showLoading();
             this.render();
         },
         render: function(){
@@ -42,13 +56,15 @@ var about =  Backbone.View.extend({
                 const template = _.template(data, {});
                 _this.$el.html(template);
                 document.title = "About Us";
-                setMainNavActive('about');
+                hideLoading();
+                // setMainNavActive('about');
             }, 'html')
         }
 });
 var appGame =  Backbone.View.extend({
     el: $('#main-content'),
         initialize: function(){
+            showLoading();
             this.render();
         },
         render: function(){
@@ -98,6 +114,7 @@ var appGame =  Backbone.View.extend({
                         $(pageContent).find(`#halo-quest-modal-wrap`).append(haloQuest);
                         $(pageContent).find(`#space-invaders-modal-wrap`).append(spaceInvaders);
                         document.title = "App & Game Development";
+                        hideLoading();
                         // setMainNavActive('features');
                     }, 'html')
                 });
@@ -108,6 +125,7 @@ var appGame =  Backbone.View.extend({
 var eLearning =  Backbone.View.extend({
     el: $('#main-content'),
         initialize: function(){
+            showLoading();
             this.render();
         },
         render: function(){
@@ -116,6 +134,7 @@ var eLearning =  Backbone.View.extend({
                 const template = _.template(data, {});
                 _this.$el.html(template);
                 document.title = "E-Learning Solution";
+                hideLoading();
                 // setMainNavActive('contact');
             }, 'html')
         }
@@ -123,6 +142,7 @@ var eLearning =  Backbone.View.extend({
 var widgetsWhatNot =  Backbone.View.extend({
     el: $('#main-content'),
         initialize: function(){
+            showLoading();
             this.render();
         },
         render: function(){
@@ -131,6 +151,7 @@ var widgetsWhatNot =  Backbone.View.extend({
                 const template = _.template(data, {});
                 _this.$el.html(template);
                 document.title = "Widgets & Whats-nots";
+                hideLoading();
                 // setMainNavActive('contact');
             }, 'html')
         }
@@ -138,6 +159,7 @@ var widgetsWhatNot =  Backbone.View.extend({
 var contact =  Backbone.View.extend({
     el: $('#main-content'),
         initialize: function(){
+            showLoading();
             this.render();
         },
         render: function(){
@@ -146,6 +168,7 @@ var contact =  Backbone.View.extend({
                 const template = _.template(data, {});
                 _this.$el.html(template);
                 document.title = "Contact Us";
+                hideLoading();
                 // setMainNavActive('contact');
             }, 'html')
         }
@@ -153,6 +176,7 @@ var contact =  Backbone.View.extend({
 var success =  Backbone.View.extend({
     el: $('#main-content'),
         initialize: function(){
+            showLoading();
             this.render();
         },
         render: function(){
@@ -161,6 +185,7 @@ var success =  Backbone.View.extend({
                 const template = _.template(data, {});
                 _this.$el.html(template);
                 document.title = "Success";
+                hideLoading();
                 // setMainNavActive('contact');
             }, 'html')
         }
@@ -168,6 +193,7 @@ var success =  Backbone.View.extend({
 var fail =  Backbone.View.extend({
     el: $('#main-content'),
         initialize: function(){
+            showLoading();
             this.render();
         },
         render: function(){
@@ -175,7 +201,8 @@ var fail =  Backbone.View.extend({
             $.get( `./pages/fail.html`, function (data) {
                 const template = _.template(data, {});
                 _this.$el.html(template);
-                document.title = "fail";
+                document.title = "Fail";
+                hideLoading();
                 // setMainNavActive('contact');
             }, 'html')
         }

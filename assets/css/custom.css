@@ -8,6 +8,28 @@
 body {
     margin-bottom: 80px;
 }
+#main-content {
+    display: none;
+}
+#main-content.active {
+    display: block;
+}
+#page-loader.inactive {
+    display: none;
+}
+#page-loader {
+    width: 100%;
+    height: calc(100% - 56px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0,0,0,0.5);
+}
+#page-loader-txt {
+    font-size: 2em;
+    color: #fff;
+}
 .main-content-wrap-padding {
     padding-top: 3rem;
     padding-bottom: 80px;
