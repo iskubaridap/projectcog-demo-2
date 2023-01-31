@@ -228,30 +228,21 @@
     border-bottom: 5px solid transparent;
 }
 .title-item .title {
-    font-size: 1.5em;
-    color: var(--orange-7);
+    color: var(--orange);
+    font-size: 2.5em;
     cursor: pointer;
-
-    -webkit-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
 }
 .title-item .title:hover {
     color: var(--orange);
     font-size: 2.5em;
 }
-.title-item:has(.title.active) {
+.title-item {
     border-bottom: 5px solid var(--orange);
-}
-.title-item .title.active {
-    color: var(--orange);
-    font-size: 2.5em;
 }
 .sec-content {
     display: none;
 }
-.sec-content.active {
+.sec-content {
     padding-bottom: 25px;
     display: block;
 }
